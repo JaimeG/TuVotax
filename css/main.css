@@ -4,7 +4,7 @@
 
 body {
     padding-top: 75px;
-    padding-bottom: 20px;
+    padding-bottom: 75px;
 }
 
 #logoHeader {
@@ -14,6 +14,12 @@ body {
 
 #RigthHeader {
 	margin-top: 14px;
+	margin-right: 15px;
+}
+
+#leftHeader {
+	margin-top: 25px;
+	margin-left: 15px;
 }
 
 #topBanner {
@@ -80,9 +86,7 @@ body {
 	padding: 0;
 }
 
-#leftHeader {
-	margin-top: 25px;
-}
+
 
 #headerBg, #footerBg {
 	background: #01142a; /* Old browsers */
@@ -98,10 +102,53 @@ body {
 	height: 75px;
 }
 
+/*Twitter Footer*/
 
+#footerTws {
+	color: #fff;
+	font-size: 18px;
+	margin-top: 15px;
+}
 
+#tw-destacados {
+	font-size: 14px;
+	width: 75%;
+	float: left;
+	color: #fff;
+}
 
+#tw-titulo {
+	float: left;
+	width: 25%
+}
 
+.prog-col {
+	width: 40%;
+	float: left;
+	color: #fff;
+}
+
+#prog-titulo {
+	width: 20%;
+	float: left;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.prog-col h1 {
+	font-size: 16px;
+	margin:0;
+	padding: 0;
+}
+
+#prog-slide {
+	margin-top: 22px;
+}
+
+#contenido2 {
+	margin-bottom: 150px;
+}
 
 
 

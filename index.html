@@ -11,23 +11,21 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="css/twitter-styles.css" rel="stylesheet" type="text/css" />
 
-        <script src="http://jwpsrv.com/library/wjl7Ip8jEeOssyIACi0I_Q.js"></script>
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="http://jwpsrv.com/library/wjl7Ip8jEeOssyIACi0I_Q.js"></script>
 
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="chromeframe">You are using an <strong>outdated</strong> brow-fluidser. Please <a href="http://brow-fluidsehappy.com/">upgrade your brow-fluidser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
     <!-- header -->
     <div class="navbar navbar-inverse navbar-fixed-top" id="headerBg">
-      <div class="container">
+      <div class="container-fluid">
             
             <ul class="nav navbar-nav navbar-right" id="RigthHeader">
                 <img src="img/txtheader.png" alt="">
@@ -48,68 +46,91 @@
     </div>
     <!-- /header -->
 
+    <!-- Streaming - Facebook  -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+
+          <div class="col-xs-8">
+
+            <div class="publicidad" id="topBanner">
+              <h1>Publicidad web</h1>
+            </div>
+
+            <div id="videoPlayer">
+              <div id='playersrXcjcduSWEp'></div>
+            </div>
+
+          </div>
+
+          <div class="col-xs-4">
+
+           <h1>Facebook Component</h1>
+            <div id="fb-root">
+             
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+    <!-- /Streaming - Facebook  -->
+
+    <div class="clearfix"></div>
+
+    <div class="container-fluid" id="contenido2">
+      <div class="row-fluid">
+        
+        <div class="col-xs-3">
+          <h1>Twitter Line</h1>
+        </div>
+        
+        <div class="col-xs-6">
+          <h1>Gif</h1>
+        </div>
+
+        <div class="col-xs-3">
+          <h1>Publicidad para Canal. Programas</h1>
+        </div>        
+
+      </div>
+    </div>
     <!-- Footer  -->
     <nav class="navbar navbar-default navbar-fixed-bottom" id="footerBg">
-      <div class="container">
-          
+      <div class="container-fluid">
+          <div class="col-md-6" id="footerTws">
+            
+            <div id="tw-titulo">
+              <p>Mas Destacados</p>
+            </div>
+
+            <div id="tw-destacados">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis lacinia arcu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis lacinia arcu</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="visible-lg" id="prog-slide">
+              <div id="prog-titulo">
+                En La Tv
+              </div>
+
+              <div class="prog-col" id="prog-actual">
+                <h1>Segmento 1 - Nombre de invitados 1 </h1>
+                <p>Hora: 3:00 - 3:50PM</p>
+              </div>
+              <div class="prog-col" id="prog-mas">
+                <h1>Segmento 2 - Nombre de invitados 2</h1>
+                <p>Hora: 3:50 - 4:50PM</p>
+              </div>
+            </div>
+          </div>
       </div>
     </nav>
     <!-- /Footer  -->
 
-    <div class="container">
-      <div class="row">
 
-        <div class="col-xs-8">
 
-          <div class="publicidad" id="topBanner">
-            <h1>Publicidad web</h1>
-          </div>
-
-          <div id="videoPlayer">
-            <div id='playersrXcjcduSWEp'></div>
-            <script type='text/javascript'>
-                jwplayer('playersrXcjcduSWEp').setup({
-                    file: 'rtmp://panel.elsalvadordigital.com/canal23,canal23',
-                    image: 'https://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
-                    width: '100%',
-                    aspectratio: '16:9'
-                });
-            </script>
-          </div>
-          
-        </div>
-
-        <div class="col-xs-4">
-          <!-- <img src="http://placehold.it/350x150"> -->
-
-           <div id="fb-root"></div>
-          
-          <div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
-          <fb:comments href="@Request.Url.AbsoluteUri" num_posts="15" width="900%"></fb:comments>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-xs-4">
-          <h1>Twitter</h1>
-          <div id="twitter-feed"></div>
-        </div>
-        <div class="col-xs-8">
-          <h1>Gifs</h1>
-          <img src="http://tvx.com.sv/expresatvx/carteles/img/KART2-VOTACIONES.gif" alt="">
-       </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-    </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
