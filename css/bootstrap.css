@@ -4373,8 +4373,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
 }
 
 .navbar-default .navbar-brand {
@@ -6311,6 +6309,13 @@ td.visible-xs {
   td.visible-xs.visible-lg {
     display: table-cell !important;
   }
+
+  #topBanner {
+    width: 750px;
+    height: 50px;
+    margin: 25px auto !important;
+  }
+
 }
 
 .visible-sm {
