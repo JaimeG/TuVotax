@@ -5,6 +5,8 @@
 body {
     padding-top: 75px;
     padding-bottom: 100px;
+    font-family: 'Ruda', sans-serif;
+    background-color: #08CBFF;
 }
 
 #logoHeader {
@@ -111,35 +113,57 @@ body {
 }
 
 #tw-destacados {
-	font-size: 14px;
+	font-size: 12px;
+	margin-top: 3px;
 	width: 75%;
 	float: left;
 	color: #fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+#tw-destacados p {
+	font-size: 10px;
 }
 
 #tw-titulo {
 	float: left;
+	padding-top: 13px;
 	width: 25%
+}
+
+#tw-titulo img {
+	margin-left: 6px;
+	margin-bottom: 3px;
 }
 
 .prog-col {
 	width: 40%;
 	float: left;
 	color: #fff;
+	padding-left: 6px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
 }
 
 #prog-titulo {
 	width: 20%;
 	float: left;
 	color: #fff;
-	font-size: 25px;
-	font-weight: bold;
+	padding: 6px 0 0;
+	font-size: 20px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
 }
 
 .prog-col h1 {
-	font-size: 16px;
+	font-size: 12px;
 	margin:0;
 	padding: 0;
+}
+
+.prog-col p {
+	font-size: 11px;
 }
 
 #prog-slide {

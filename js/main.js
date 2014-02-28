@@ -19,9 +19,6 @@ window.fbAsyncInit = function() {
 jQuery(document).ready(function($){
   $('#social-stream').dcSocialStream({
     feeds: {
-      twitter: {
-        id: '/9927875,#designchemical,designchemical'
-      },
       facebook: {
         id: '297691763653926, 171905043005822',
         intro: 'Posted',
@@ -34,6 +31,12 @@ jQuery(document).ready(function($){
       },
       pinterest: {
         id: 'canaltvx'
+      },
+      instagram: {
+        id: '492866873',
+        accessToken: '1131422920.391f7a6.3226857c319c431ead35918658726849',
+        redirectUrl: 'http://prueba.heimdaldesign.com/TuVotaX/',
+        clientId: '391f7a62e0d3453aabafe7e0414b72b5',
       },
     },
     rotate: {
