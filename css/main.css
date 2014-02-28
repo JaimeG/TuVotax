@@ -120,10 +120,13 @@ body {
 	color: #fff;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
+	overflow: hidden;
 }
 
 #tw-destacados p {
 	font-size: 10px;
+	height: 50px;
+	margin-top: 0px;
 }
 
 #tw-titulo {
