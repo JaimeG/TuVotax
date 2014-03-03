@@ -47,6 +47,24 @@ jQuery(document).ready(function($){
          
 });
 
+$('#gifSlider').bxSlider({
+  mode: 'fade',
+  responsive: true,
+  auto: true,
+  pause: 5000,
+  autoControls: true,
+});
+
+$('#pub-tvx-programas').bxSlider({
+  mode: 'fade',
+  responsive: true,
+  auto: true,
+  pause: 10000,
+  autoControls: true,
+});
+
+
+
 jwplayer('playersrXcjcduSWEp').setup({
     file: 'rtmp://panel.elsalvadordigital.com/canal23,canal23',
     image: 'https://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
