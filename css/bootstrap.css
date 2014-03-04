@@ -845,8 +845,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 
 .col-xs-1,
@@ -1065,9 +1065,13 @@ pre code {
   }
 }
 
+/*Ipad*/
 @media (min-width: 992px) {
   .container {
     max-width: 970px;
+  }
+  .container-fluid {
+     margin: 0 0 !important; 
   }
   .col-md-1,
   .col-md-2,
@@ -1233,6 +1237,11 @@ pre code {
   .container {
     max-width: 1170px;
   }
+
+  .container-fluid {
+    margin: 0 5% !important;
+  }
+
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -1573,6 +1582,12 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 768px) {
+
+
+  .container-fluid {
+     margin: 0 0 !important; 
+  }
+
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1983,6 +1998,13 @@ textarea.input-lg {
   .form-horizontal .control-label {
     text-align: right;
   }
+
+  .container-fluid {
+    margin: 0 0 !important; 
+  }
+
+
+
 }
 
 .btn {
@@ -4195,6 +4217,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar > .container .navbar-brand {
     margin-left: -15px;
   }
+
+  .nav > li {
+    float: left;
+  }
+
 }
 
 .navbar-toggle {
@@ -6366,6 +6393,10 @@ td.visible-xs {
     width: 750px;
     height: 50px;
     margin: 25px auto !important;
+  }
+
+  .container-fluid {
+    margin: 0 5% !important;
   }
 
 

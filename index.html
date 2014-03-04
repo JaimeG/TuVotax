@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>TVX - Especial - Segunda Vuelta Elecciones Presidenciales 2014</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="fb:app_id" content="815724718444105"/>
 
         <link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
@@ -18,7 +18,7 @@
         
         <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="http://jwpsrv.com/library/wjl7Ip8jEeOssyIACi0I_Q.js"></script>
+        
 
     </head>
     <body>
@@ -29,21 +29,33 @@
     <!-- header -->
     <div class="navbar navbar-inverse navbar-fixed-top" id="headerBg">
       <div class="container-fluid">
-            
-            <ul class="nav navbar-nav navbar-right" id="RigthHeader">
+
+            <ul class="nav navbar-nav navbar-right hidden-xs" id="RigthHeader">
                 <img src="img/txtheader.png" alt="">
             </ul>
 
-            <ul id="leftHeader" class="nav navbar-nav navbar-left">
+            <ul id="leftHeader" class="nav navbar-nav navbar-left hidden-xs">
                 <li><a href="#" id="logoHeader"> <img src="img/tvx-logo.png" alt=""></a></li>
                 <li><a href="#" class="headerFb"></a></li>
                 <li><a href="#" class="headerTw"></a></li>
                 <li><a href="#" class="headerIg"></a></li>
                 <li><a href="#" class="headerYt"></a></li>
                 <li><a href="#" class="headerPr"></a></li>
-                <li><div id="separador"></div></li>
-                <li><img id="TuVotax" src="img/tuvotax.png" alt=""></li>
+                <li><div class="hidden-xs" id="separador"></div></li>
+                <li><img class="hidden-xs" id="TuVotax" src="img/tuvotax.png" alt=""></li>
             </ul>
+            
+            <div class='visible-xs' id="headerPhone">
+              <div class="float-left">
+                  <img src="img/tvx-logo.png" class="float-leftimg" alt="">
+                  <div id="separador" class="float-leftimg"></div>
+                  <img src="img/tuvotax.png" class="float-leftimg " alt="">
+              </div>
+
+              <div class="float-right">
+                <img src="img/txtheader.png" alt="">
+              </div>
+            </div> 
 
       </div>
     </div>
@@ -53,22 +65,23 @@
     <div class="container-fluid">
       <div class="row-fluid">
 
-          <div class="col-sm-8">
+          <div class="col-sm-12 col-lg-8">
 
             <div class="publicidad" id="topBanner">
               <h1>Publicidad web</h1>
             </div>
 
-            <div class="shadow" id="videoPlayer">
+            <div id="videoPlayer">
                 <div id='playersrXcjcduSWEp'></div>
+                <img src="http://tvx.com.sv/senal.png" class="img-responsive centerImg" alt="">
             </div>
 
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-12 col-lg-4">
 
               <div class="programacion">
-              <img src="http://tvx.com.sv/senal.png" class="img-responsive" alt="">
+            
                   <h1>Nuestra programacion</h1>
 
               </div>
@@ -79,6 +92,7 @@
               </div>
           </div>
 
+
       </div>
     </div>
     <!-- /Streaming - Facebook  -->
@@ -88,11 +102,11 @@
     <div class="container-fluid">
       <div class="row-fluid">
         
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-lg-3">
             <div id="twitter-feed"></div>
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-8 col-lg-7">
             <div class="contenido">
               <h1>Titulo</h1>
               <div class="col-sm-12" id="">
@@ -106,32 +120,52 @@
             </div>
         </div>
 
-        <div class="col-sm-3">
-          <div class="contenido">
-            <div class="col-sm-12">
-             <h1>Programas TVX</h1>
-              <ul id="pub-tvx-programas">
-                <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt=""></a></li>
-                <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Instagram.jpg" alt=""></a></li>
-                <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/BBP.jpg" alt=""></a></li>
-                <li><a href="https://twitter.com/canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Twitter.jpg" alt=""></a></li>
-                <li><a href="https://www.facebook.com/zarezion.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/ZZ.jpg" alt=""></a></li>
-                <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Youtube.jpg" alt=""></a></li>
-                <li><a href="https://www.facebook.com/ExpresaTVX?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EXPRESA.jpg" alt=""></a></li>
-              </ul>
-           </div>
-          </div>
-        </div>        
+        <div class="col-lg-2 hidden-sm hidden-xs hidden-md">
+          <div class="col-sm-12">
+            <ul id="pub-tvx-programas">
+              <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt=""></a></li>
+              <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Instagram.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/BBP.jpg" alt=""></a></li>
+              <li><a href="https://twitter.com/canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Twitter.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/zarezion.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/ZZ.jpg" alt=""></a></li>
+              <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Youtube.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/ExpresaTVX?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EXPRESA.jpg" alt=""></a></li>
+            </ul>
+         </div>
+      </div> 
 
       </div>
 
     </div>
+
     <div class="clearfix spacer"></div>
 
-      <div id="social-stream"></div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+      
+      <div class="col-sm-6 col-lg-6">
+        <div class="contenido">
+          <h1>ExpresaTVX</h1>
+          <div id="youtube-feed" data-plumtube data-plum-max-results=9 data-plum-show-title="link" data-plum-user="ExpresaTVX"><a href="//www.youtube.com/koryphaios">See all of Plum's videos.</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-6">
+        <div class="contenido">
+          <h1>INSTAGRAM</h1>
+            <div class="instagram tag"></div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+
+    <div class="clearfix spacer"></div>
+
+    <div id="social-stream"></div>
 
     <!-- Footer  -->
-    <nav class="navbar navbar-default navbar-fixed-bottom" id="footerBg">
+    <nav class="navbar navbar-default navbar-fixed-bottom hidden-xs" id="footerBg">
       <div class="container-fluid">
           <div class="col-md-6" id="footerTws">
             
@@ -176,8 +210,11 @@
         <script type="text/javascript" src="js/jquery.social.stream.1.5.4.min.js"></script>
 
         <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+        <script src="js/plumtube.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
 
         <script src="js/main.js"></script>
 
