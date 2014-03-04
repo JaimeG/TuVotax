@@ -42,7 +42,8 @@ function updateFeed(){
 	
 	var headerHTML = '';
 	var loadingHTML = '';
-	headerHTML += '<a href="https://twitter.com/" target="_blank"><img src="img/twitter-bird-light.png" width="34" style="float:left;padding:3px 12px 0px 6px" alt="twitter bird" /></a>';
+	headerHTML += '<a href="https://twitter.com/" target="_blank"><img src="img/twitter-bird-light.png" style="float:left; margin-right:15px; margin-top: 10px;" alt="twitter bird" /></a>';
+	// headerHTML += '<a href="https://twitter.com/" target="_blank"><img src="img/twitter-bird-light.png" width="34" style="float:left;padding:3px 12px 0px 6px" alt="twitter bird" /></a>';
 	headerHTML += '<h1>'+screenname+'</h1>';
 	//loadingHTML += '<div id="loading-container"><img src="img/ajax-loader.gif" width="32" height="32" alt="tweet loader" /></div>';
 	

@@ -102,6 +102,7 @@ body {
 	background: linear-gradient(to bottom,  #01142a 0%,#001022 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01142a', endColorstr='#001022',GradientType=0 ); /* IE6-8 */
 	height: 75px;
+	z-index: 9999;
 }
 
 /*Twitter Footer*/
@@ -114,7 +115,7 @@ body {
 
 #tw-destacados {
 	font-size: 12px;
-	margin-top: 3px;
+	margin-top: 7px;
 	width: 75%;
 	float: left;
 	color: #fff;
@@ -124,7 +125,7 @@ body {
 }
 
 #tw-destacados p {
-	font-size: 10px;
+	font-size: 12px;
 	height: 50px;
 	margin-top: 0px;
 }
@@ -144,7 +145,8 @@ body {
 	width: 40%;
 	float: left;
 	color: #fff;
-	padding-left: 6px;
+	margin: 0 !important;
+	padding: 10px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
 }
@@ -170,12 +172,18 @@ body {
 }
 
 #prog-slide {
-	margin-top: 22px;
+	margin-top: 10px;
 }
 
 .fb-comments {
 	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	overflow-y: auto;
 	background-color: #fff;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
 #twitter-feed {
@@ -186,13 +194,19 @@ body {
     background-color:#FFF;
     color:#333;
     overflow:auto;
+    min-height:300px;
+    height: 522px;
+    overflow:hidden
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
  
 #twitter-feed h1 {
     color:#5F5F5F;
     margin:0px;
     padding:9px 0px 9px 0px;
-    font-size:18px;
+    font-size:28px;
     font-weight:lighter;    
 }
  
@@ -212,6 +226,11 @@ body {
     border-radius:7px;  
     border:none;
      
+}
+
+.scroll_content {
+	max-height: 460px !important;
+	padding-right: 10px;
 }
  
 /* -------- TEXT STYLING ------*/
@@ -309,8 +328,46 @@ body {
 	color:#aaa;
 }
 
+.fb-comments, .fb-comments > span[style], .fb_iframe_widget iframe[style] { width: 100% !important; display: inline-block; position: relative;}
 
+#fbContainer {
+	margin-top: 25px;
+}
 
+.twitter-timeline {
+ width: 350px;
+}
 
+.shadow {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
 
+.contenido {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	background-color: #fff;
+	padding: 20px;
+}
 
+.contenido h1 {
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.spacer {
+	margin: 50px 0;
+}
+
+/*Slider Style*/
+
+#gifSlider, #pub-tvx-programas {
+	padding: 0;
+}
+
+.prog-actual {
+	/*background-color: rgba(255, 255, 255, 0.11);
+	height: 60px;*/
+}

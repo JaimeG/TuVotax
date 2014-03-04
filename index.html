@@ -14,11 +14,11 @@
         <link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        
         <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="http://jwpsrv.com/library/wjl7Ip8jEeOssyIACi0I_Q.js"></script>
-
-
 
     </head>
     <body>
@@ -49,63 +49,86 @@
     </div>
     <!-- /header -->
 
-
-
     <!-- Streaming - Facebook  -->
     <div class="container-fluid">
       <div class="row-fluid">
 
-          <div class="col-xs-8">
+          <div class="col-sm-8">
 
             <div class="publicidad" id="topBanner">
               <h1>Publicidad web</h1>
             </div>
 
-            <div id="videoPlayer">
-              <div id='playersrXcjcduSWEp'></div>
+            <div class="shadow" id="videoPlayer">
+                <div id='playersrXcjcduSWEp'></div>
             </div>
 
           </div>
 
-          <div class="col-xs-4">
-            
-            <h1>Comentarios</h1>
+          <div class="col-sm-4">
+
+              <div class="programacion">
+              <img src="http://tvx.com.sv/senal.png" class="img-responsive" alt="">
+                  <h1>Nuestra programacion</h1>
+
+              </div>
+
               <div id="fb-root"></div>
-              <div class="fb-comments" data-href="http://prueba.heimdaldesign.com/TuVotaX/" data-width="" data-numposts="5" data-colorscheme="light"></div>
-
-
+              <div id="fbContainer">
+                <div class="fb-comments" data-href="http://prueba.heimdaldesign.com/TuVotaX/" data-height="550" data-numposts="5" data-colorscheme="light"></div>
+              </div>
           </div>
 
       </div>
     </div>
     <!-- /Streaming - Facebook  -->
 
-    <div class="clearfix"></div>
+    <div class="clearfix spacer"></div>
 
     <div class="container-fluid">
       <div class="row-fluid">
         
-        <div class="col-xs-3">
-          <h1>Twitter Line</h1>
-            <div id="twitter-feed" style="max-height:300px;overflow:hidden"></div>
+        <div class="col-sm-3">
+            <div id="twitter-feed"></div>
         </div>
         
-        <div class="col-xs-6">
-         
+        <div class="col-sm-6">
+            <div class="contenido">
+              <h1>Titulo</h1>
+              <div class="col-sm-12" id="">
+                <ul id="gifSlider">
+                  <li><img src="http://tvx.com.sv/expresatvx/carteles/img/STAIRS-VOTACIONES.gif" alt=""></li>
+                  <li><img src="http://tvx.com.sv/expresatvx/carteles/img/KART2-VOTACIONES.gif" alt=""></li>
+                  <li><img src="http://tvx.com.sv/expresatvx/carteles/img/ROUND-2-DIPUTADOS.gif" alt=""></li>
+                </ul>
+              </div>
+             
+            </div>
         </div>
 
-        <div class="col-xs-3">
-          <img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt="">
+        <div class="col-sm-3">
+          <div class="contenido">
+            <div class="col-sm-12">
+             <h1>Programas TVX</h1>
+              <ul id="pub-tvx-programas">
+                <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt=""></a></li>
+                <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Instagram.jpg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/BBP.jpg" alt=""></a></li>
+                <li><a href="https://twitter.com/canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Twitter.jpg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/zarezion.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/ZZ.jpg" alt=""></a></li>
+                <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Youtube.jpg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/ExpresaTVX?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EXPRESA.jpg" alt=""></a></li>
+              </ul>
+           </div>
+          </div>
         </div>        
 
       </div>
 
     </div>
-    <div class="clearfix"></div>
-    
-    <h1>Social Network Wall</h1>
+    <div class="clearfix spacer"></div>
 
-    <div id="social-stream"></div>
+      <div id="social-stream"></div>
 
     <!-- Footer  -->
     <nav class="navbar navbar-default navbar-fixed-bottom" id="footerBg">
@@ -124,13 +147,13 @@
           </div>
 
           <div class="col-md-6">
-            <div class="visible-lg" id="prog-slide">
+            <div class="" id="prog-slide">
               <div id="prog-titulo">
                 EN VIVO
                 <img src="img/flecha.png" alt="">
               </div>
 
-              <div class="prog-col" id="prog-actual">
+              <div class="prog-col prog-actual" id="prog-actual">
                 <h1>Segmento 1 - Nombre de invitados 1 + Invitado 2 </h1>
                 <p>Hora: 3:00 - 3:50PM</p>
               </div>
@@ -151,6 +174,8 @@
 
         <script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
         <script type="text/javascript" src="js/jquery.social.stream.1.5.4.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
