@@ -88,6 +88,9 @@ body {
 	padding: 0;
 }
 
+.container-fluid {
+	margin: 0 10%;
+}
 
 
 #headerBg, #footerBg {
@@ -102,7 +105,7 @@ body {
 	background: linear-gradient(to bottom,  #01142a 0%,#001022 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01142a', endColorstr='#001022',GradientType=0 ); /* IE6-8 */
 	height: 75px;
-	z-index: 9999;
+	z-index: 10002;
 }
 
 /*Twitter Footer*/
@@ -194,8 +197,8 @@ body {
     background-color:#FFF;
     color:#333;
     overflow:auto;
-    min-height:300px;
-    height: 522px;
+/*    min-height:300px;
+    height: 440px;*/
     overflow:hidden
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -349,7 +352,7 @@ body {
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	background-color: #fff;
-	padding: 20px;
+	padding: 10px;
 }
 
 .contenido h1 {
@@ -370,4 +373,91 @@ body {
 .prog-actual {
 	/*background-color: rgba(255, 255, 255, 0.11);
 	height: 60px;*/
+}
+
+.float-left {
+	float: left;
+	margin-top: 25px;
+}
+
+.float-right {
+	float: right;
+	margin-top: 15px;
+}
+
+.float-leftimg {
+	float: left;
+}
+
+#youtube-feed ul {
+	margin: 15px -5px 0px 5px;
+	overflow: hidden;
+	padding: 0;
+}
+
+@media (min-width: 1000px) {
+	#youtube-feed li {
+		width: 16.66667%;
+	}
+}
+
+@media (min-width: 750px) {
+	#youtube-feed li {
+		width: 25%;
+	}
+}
+
+#youtube-feed li {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding-right: 5px;
+	width: 33%;
+}
+
+#youtube-feed li .yt-title-link {
+	display: block;
+	font-size: 14px;
+	margin: 5px auto 15px;
+	text-align: left;
+}
+
+#youtube-feed li {
+	list-style-type: none;
+}
+
+#youtube-feed li img {
+	display: block;
+	margin: auto;
+	/*max-width: 120px;
+*/	width: 100%;
+}
+
+#youtube-feed {
+	background: #fff;
+	border: 1px solid #eee;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.centerImg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram {
+	background: #fff;
+	border: 1px solid #eee;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+.instagram img {
+	width: 100%;
+	margin: 5px 0;
 }

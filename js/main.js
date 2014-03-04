@@ -6,8 +6,47 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
 jQuery(document).ready(function($){
+
+
+    function createPhotoElement(photo) {
+      var innerHtml = $('<img>')
+        .addClass('instagram-image')
+        .attr('src', photo.images.thumbnail.url);
+
+      innerHtml = $('<a>')
+        .attr('target', '_blank')
+        .attr('href', photo.link)
+        .append(innerHtml);
+
+      return $('<div>')
+        .addClass('col-xs-3')
+        .attr('id', photo.id)
+        .append(innerHtml);
+    }
+
+    function didLoadInstagram(event, response) {
+      var that = this;
+
+      $.each(response.data, function(i, photo) {
+        $(that).append(createPhotoElement(photo));
+      });
+    }
+
+    $(document).ready(function() {
+      var clientId = '391f7a62e0d3453aabafe7e0414b72b5';
+      
+      $('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
+      $('.instagram.tag').instagram({
+        hash: 'tvx',
+        count: 16,
+        clientId: clientId
+      });
+      
+    });
+  
+
+
   $('#social-stream').dcSocialStream({
     feeds: {
       facebook: {
@@ -22,12 +61,6 @@ jQuery(document).ready(function($){
       },
       pinterest: {
         id: 'canaltvx'
-      },
-      instagram: {
-        id: '492866873',
-        accessToken: '1131422920.391f7a6.3226857c319c431ead35918658726849',
-        redirectUrl: 'http://prueba.heimdaldesign.com/TuVotaX/',
-        clientId: '391f7a62e0d3453aabafe7e0414b72b5',
       },
     },
     rotate: {
@@ -59,9 +92,10 @@ $('#pub-tvx-programas').bxSlider({
   mode: 'fade',
   responsive: true,
   auto: true,
-  pause: 10000,
+  pause: 20000,
   autoControls: true,
 });
+
 
 
 
@@ -71,3 +105,9 @@ jwplayer('playersrXcjcduSWEp').setup({
     width: '100%',
     aspectratio: '16:9'
 });
+
+
+    
+
+
+
