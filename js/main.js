@@ -8,6 +8,7 @@
 
 
 jQuery(document).ready(function($){
+  
   $('#social-stream').dcSocialStream({
     feeds: {
       facebook: {
@@ -44,8 +45,35 @@ jQuery(document).ready(function($){
     iconPath: 'img/dcsns-dark/',
     imagePath: 'img/dcsns-dark/'
   });
-         
+  
+
+  updateShows();
+  setInterval(updateShows,60000);
 });
+
+function updateShows(){
+  $.getJSON(
+      'getShows.php',
+      function(response) {
+        var texto = response.actual.nombre + " - ";
+        for(var invitado in response.actual.invitados)
+          texto += " " + response.actual.invitados[invitado] + " +";
+
+        $('#prog-actual h1').text(texto.substring(0, texto.length - 1));
+
+        $('#prog-actual p').text("Hora: " + response.actual.inicio + " - " + response.actual.fin);
+
+        texto = response.siguiente.nombre + " - ";
+        for(var invitado in response.siguiente.invitados)
+          texto += " " + response.siguiente.invitados[invitado] + " +";
+
+        $('#prog-mas h1').text(texto.substring(0, texto.length - 1));
+
+        $('#prog-mas p').text("Hora: " + response.siguiente.inicio + " - " + response.siguiente.fin);
+
+      }
+    )
+}
 
 $('#gifSlider').bxSlider({
   mode: 'fade',
@@ -62,8 +90,6 @@ $('#pub-tvx-programas').bxSlider({
   pause: 10000,
   autoControls: true,
 });
-
-
 
 jwplayer('playersrXcjcduSWEp').setup({
     file: 'rtmp://panel.elsalvadordigital.com/canal23,canal23',
