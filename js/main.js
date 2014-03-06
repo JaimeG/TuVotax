@@ -120,11 +120,8 @@ $('#pub-tvx-programas').bxSlider({
   autoControls: true,
 });
 
-jwplayer('playersrXcjcduSWEp').setup({
-    file: 'rtmp://panel.elsalvadordigital.com/canal23,canal23',
-    image: 'https://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
-    width: '100%',
-    aspectratio: '16:9'
+$.getJSON('getstatistics.php', function(response){
+    console.log(response);
 });
 
 
