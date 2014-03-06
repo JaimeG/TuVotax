@@ -21,7 +21,6 @@ function scrollPopular(){
 	if(popularTweets.length == 0) return;
 
 	var nextTweet = popularTweets.shift();
-	console.log(nextTweet.text);
 	$("#tw-destacados p:last-child").html(nextTweet.text);
 	$("#tw-destacados p:first-child").animate({marginTop:'-60px', opacity:0}, 1500, function(){
 		$("#tw-destacados p:last-child").after($("#tw-destacados p:first-child"));
@@ -38,6 +37,7 @@ function updateFeed(){
    var showretweets = true;
    var showtweetlinks = true;
    var showprofilepic = true;
+   var showtweetactions = true;
 	var showretweetindicator = true;
 	
 	var headerHTML = '';
@@ -82,9 +82,9 @@ function updateFeed(){
 					 
 					 //Generate twitter feed HTML based on selected options
 					if (((showretweets == true) || ((isaretweet == false) && (showretweets == false))) && ((showdirecttweets == true) || ((showdirecttweets == false) && (isdirect == false)))) { 
-						if ((feeds[i].text.length > 1) && (displayCounter <= displaylimit)) {             
+						if ((feeds[i].text.length > 1) && (displayCounter <= displaylimit)) {       
 							if (showtweetlinks == true) {
-								status = addlinks(status);
+								status = addlinks(status); 
 							}
 
 							feedHTML += '<div class="twitter-article" id="tw'+displayCounter+'">'; 										                 
@@ -94,7 +94,11 @@ function updateFeed(){
 							if ((isaretweet == true) && (showretweetindicator == true)) {
 								feedHTML += '<div id="retweet-indicator"></div>';
 							}						
-							
+										
+							if (showtweetactions == true) {
+								feedHTML += '<div id="twitter-actions"><div class="intent" id="intent-reply"><a href="https://twitter.com/intent/tweet?in_reply_to='+tweetid+'" title="Reply"></a></div><div class="intent" id="intent-retweet"><a href="https://twitter.com/intent/retweet?tweet_id='+tweetid+'" title="Retweet"></a></div><div class="intent" id="intent-fave"><a href="https://twitter.com/intent/favorite?tweet_id='+tweetid+'" title="Favourite"></a></div></div>';
+							}
+
 							feedHTML += '</div>';
 							feedHTML += '</div>';
 							displayCounter++;
@@ -104,6 +108,26 @@ function updateFeed(){
              
          feedHTML += '</div>'
          $('#twitter-feed').html(feedHTML);
+
+			//Add twitter action animation and rollovers
+			if (showtweetactions == true) {				
+				$('.twitter-article').hover(function(){
+					$(this).find('#twitter-actions').css({'display':'block', 'opacity':0, 'margin-top':-20});
+					$(this).find('#twitter-actions').animate({'opacity':1, 'margin-top':0},200);
+				}, function() {
+					$(this).find('#twitter-actions').animate({'opacity':0, 'margin-top':-20},120, function(){
+						$(this).css('display', 'none');
+					});
+				});			
+			
+				//Add new window for action clicks
+			
+				$('#twitter-actions a').click(function(){
+					var url = $(this).attr('href');
+				  window.open(url, 'tweet action window', 'width=580,height=500');
+				  return false;
+				});
+			}
 			
 			
     }).error(function(jqXHR, textStatus, errorThrown) {
