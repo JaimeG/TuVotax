@@ -2,15 +2,15 @@
 	$shows = array();
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
-			'inicio' => "0:00 AM",
-			'fin'=>  "0:29 AM",
+			'inicio' => "12:00 AM",
+			'fin'=>  "12:29 AM",
 			'invitados' => array('Invitado 1', 'Invitado 2')
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
-			'inicio' => "0:30 AM",
-			'fin'=>  "0:59 AM",
+			'inicio' => "12:30 AM",
+			'fin'=>  "12:59 AM",
 			'invitados' => array('Invitado 1', 'Invitado 2')
 		);
 	array_push($shows,$programa);
@@ -345,6 +345,9 @@ $ahora=strtotime(date('G:i'));
 $i=0;
 while(($actual==null || $siguiente==null) && $i < count($shows)){
 	$programa = $shows[$i];
+
+	//echo strtotime($programa["inicio"]) . " - " .  $ahora . " - " . strtotime($programa["fin"]) . "<br>";
+
 	if( ( $ahora >= strtotime($programa["inicio"]) ) && ( $ahora <= strtotime($programa["fin"]) )){
 		$actual = $programa;
 		$siguiente = $shows[$i+1];
