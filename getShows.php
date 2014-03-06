@@ -1,4 +1,7 @@
 <?php
+	// Get El Salvador time
+	date_default_timezone_set("America/El_Salvador");
+
 	$shows = array();
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
@@ -85,10 +88,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Class icons',
 			'inicio' => "6:00 AM",
 			'fin'=>  "6:29 AM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('videos Musicales', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -113,10 +116,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'GNX',
 			'inicio' => "8:00 AM",
 			'fin'=>  "8:29 AM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Videos Musicales', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -127,10 +130,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'En Vivo',
 			'inicio' => "9:00 AM",
 			'fin'=>  "9:29 AM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Videos Musicales 1', 'Invitado 2')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -141,10 +144,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Videotópico',
 			'inicio' => "10:00 AM",
 			'fin'=>  "10:29 AM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Videos Musicales', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -155,10 +158,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Novascopio',
 			'inicio' => "11:00 AM",
 			'fin'=>  "11:29 AM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Videos musicales', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -169,10 +172,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Cafeina',
 			'inicio' => "12:00 PM",
 			'fin'=>  "12:29",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Videos Musicales', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -204,10 +207,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Zarezion',
+			'nombre' => 'Extravagando',
 			'inicio' => "2:30 PM",
 			'fin'=>  "2:59 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Conducido por: Diego Giro', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -218,10 +221,10 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Zarezion',
+			'nombre' => 'BumBamPop',
 			'inicio' => "3:30 PM",
 			'fin'=>  "3:59 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Conducido por: Gracia Vilanova', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
@@ -235,28 +238,28 @@
 			'nombre' => 'Zarezion',
 			'inicio' => "4:30 PM",
 			'fin'=>  "4:59 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Bum Bam Pop',
-			'inicio' => "5:00 PM",
-			'fin'=>  "5:29 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Conducido por: Gustavo', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
-			'inicio' => "5:30 PM",
-			'fin'=>  "5:59 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'inicio' => "5:00 PM",
+			'fin'=>  "5:29 PM",
+			'invitados' => array('Conducido por: Gustavo 1', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Audiopuntura',
+			'inicio' => "5:30 PM",
+			'fin'=>  "5:59 PM",
+			'invitados' => array('Conducido por: Olga', '')
+		);
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Audiopuntura',
 			'inicio' => "6:00 PM",
 			'fin'=>  "6:29 PM",
-			'invitados' => array('Invitado 1', 'Invitado 2')
+			'invitados' => array('Conducido por: Olga', '')
 		);
 	array_push($shows,$programa);
 	$programa = array(
