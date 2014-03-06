@@ -1584,10 +1584,17 @@ table th[class*="col-"] {
 
 @media (max-width: 768px) {
 
-
+    .contenido {
+         margin: 10px 0;
+      }
+  
   .container-fluid {
      margin: 0 0 !important; 
   }
+
+  .stream li {
+    width: 320px !important;
+    }
 
   .table-responsive {
     width: 100%;
@@ -6397,7 +6404,7 @@ td.visible-xs {
   }
 
   .container-fluid {
-    margin: 0 5% !important;
+    margin: 0 2% !important;
   }
 
 
