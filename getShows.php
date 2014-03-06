@@ -48,7 +48,7 @@
 	$programa = array(
 			'nombre' => 'Cafeina',
 			'inicio' => "12:00 PM",
-			'fin'=>  "2:29",
+			'fin'=>  "2:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);

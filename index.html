@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-        <script src="http://jwpsrv.com/library/kSUNjKPgEeOpBSIACrqE1A.js"></script>
+        <script type="text/javascript" src="http://source.netandino.com/html5/player-2012-free.js"></script>
         
 
     </head>
@@ -73,7 +73,39 @@
               <h1>Publicidad web</h1>
             </div> -->
 
-            <div id="videoPlayer">
+            <div id="container">Cargando ...</div>
+            <script type="text/javascript">
+                jwplayer("container").setup({
+                  backcolor: "000000",
+                frontcolor: "FFFFFF",
+                lightcolor: "FFFFFF",
+                screencolor: "000000",
+                volume: 100,
+                aspectratio: '16:9',
+                autostart: "true",
+                controlbar: "over",
+                    width: '100%',
+                    modes: [
+                        { type: "flash", 
+                          src: "http://source.netandino.com/html5/player-2012-free.swf", 
+                          config: {
+                            file: "canal23",
+                            streamer: "rtmp://panel.elsalvadordigital.com/canal23",
+                            provider: "rtmp"
+                          }
+                        },
+                        { type: "html5",
+                          config: {
+                            file: "http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8"
+                          }
+                        },
+                        { type: "download" }
+                    ]
+
+                });
+            </script>
+
+            <!-- <div id="videoPlayer">
                 <div id='playerhuXXxIRqRrvi'></div>
                     <script type='text/javascript'>
                         jwplayer('playerhuXXxIRqRrvi').setup({
@@ -85,7 +117,7 @@
                         });
                     </script>
                 <img src="http://tvx.com.sv/senal.png" class="img-responsive centerImg" alt="">
-            </div>
+            </div> -->
 
           </div>
 
@@ -97,7 +129,7 @@
 
               <div id="fb-root"></div>
               <div id="fbContainer">
-                <div class="fb-comments" data-href="http://prueba.heimdaldesign.com/TuVotaX/" data-height="320" data-width="435" data-numposts="5" data-colorscheme="light"></div>
+                <div class="fb-comments" data-href="http://prueba.heimdaldesign.com/TuVotaX/" data-height="320" data-width="400" data-numposts="5" data-colorscheme="light"></div>
               </div>
           </div>
 
@@ -131,7 +163,19 @@
 
         <div class="col-lg-2 hidden-sm hidden-xs hidden-md">
           <div class="col-sm-12">
-            <ul id="pub-tvx-programas">
+            <ul class="pub-tvx-programas">
+              <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt=""></a></li>
+              <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Instagram.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/BBP.jpg" alt=""></a></li>
+              <li><a href="https://twitter.com/canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Twitter.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/zarezion.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/ZZ.jpg" alt=""></a></li>
+              <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Youtube.jpg" alt=""></a></li>
+              <li><a href="https://www.facebook.com/ExpresaTVX?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EXPRESA.jpg" alt=""></a></li>
+            </ul>
+         </div>
+
+         <div class="col-sm-12">
+            <ul class="pub-tvx-programas">
               <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/EV.jpg" alt=""></a></li>
               <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/Instagram.jpg" alt=""></a></li>
               <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="http://tvx.com.sv/expresatvx/publicidad/img/BBP.jpg" alt=""></a></li>
@@ -179,8 +223,7 @@
           <div class="col-md-6" id="footerTws">
             
             <div id="tw-titulo">
-              TWEETS <br>  
-              DESTACADOS
+              TWEETS DESTACADOS
               <img src="img/flecha.png" alt="">
             </div>
 
@@ -193,17 +236,16 @@
           <div class="col-md-6">
             <div class="" id="prog-slide">
               <div id="prog-titulo">
-                EN <br>
-                VIVO
+                EN  VIVO
                 <img src="img/flecha.png" alt="">
               </div>
 
               <div class="prog-col prog-actual" id="prog-actual">
-                <h1>Segmento 1 - Nombre de invitados 1 + Invitado 2 </h1>
+                <h1>Programa</h1>
                 <p>Hora: 3:00 - 3:50PM</p>
               </div>
               <div class="prog-col" id="prog-mas">
-                <h1>Segmento 2 - Nombre de invitados 2 + Invitado 3</h1>
+                <h1>Programa</h1>
                 <p>Hora: 3:50 - 4:50PM</p>
               </div>
             </div>
