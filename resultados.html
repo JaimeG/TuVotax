@@ -78,6 +78,8 @@
           <div class="col-sm-12">
           	<div class="contenido">
           		<h1>Contenido Elecciones</h1>
+              <h3>FMLN: <span id="fmln_porcentaje"></span></h3>
+              <h3>ARENA: <span id="arena_porcentaje"></span></h3>
           	</div>
           </div>
     
@@ -131,6 +133,13 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $.getJSON('getstatistics.php', function(response){
+              $("#fmln_porcentaje").text(response.fmln);
+              $("#arena_porcentaje").text(response.arena);
+            });
+
+        </script>
   
            <script>
         //     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

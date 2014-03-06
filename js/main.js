@@ -84,17 +84,13 @@ function updateShows(){
   $.getJSON(
       'getShows.php',
       function(response) {
-        var texto = response.actual.nombre + " - ";
-        for(var invitado in response.actual.invitados)
-          texto += " " + response.actual.invitados[invitado] + " +";
+        var texto = response.actual.nombre + " - " + response.actual.invitados;
 
         $('#prog-actual h1').text(texto.substring(0, texto.length - 1));
 
         $('#prog-actual p').text("Hora: " + response.actual.inicio + " - " + response.actual.fin);
 
-        texto = response.siguiente.nombre + " - ";
-        for(var invitado in response.siguiente.invitados)
-          texto += " " + response.siguiente.invitados[invitado] + " +";
+        texto = response.siguiente.nombre + " - " + response.siguiente.invitados;
 
         $('#prog-mas h1').text(texto.substring(0, texto.length - 1));
 
