@@ -8,18 +8,47 @@
 	$consumersecret = "9nXebFU3vlZpAB2uquuq9cZLO1d3nacQqujkWMI78Y";
 	$accesstoken = "97114532-v6mktzQJgKNQrPeo9ixPRaINOpuuHm18AmeUc2O9G";
 	$accesstokensecret = "Vq2yMtmFo80q7ufGUU6YIa5RFkFqWhPrlhcBrPM7Fg1Xk";
+	$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);	 
+
+	$counter=0;
+	do{
+		if($counter % 20 == 0){		
+			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=30&result_type=recent");
+			//Check twitter response for errors.
+			if ( isset( $tweets->errors[0]->code )) {
+			    // If errors exist, print the first error for a simple notification.
+			    echo "Error encountered: ".$tweets->errors[0]->message." Response code:" .$tweets->errors[0]->code;
+			} else {
+			    // No errors exist. Write tweets to json/txt file.
+			    $file = "tweets_recent.json";
+			    $fh = fopen($file, 'w') or die("can't open file");
+			    fwrite($fh, json_encode($tweets));
+			    fclose($fh);
+			}
+
+			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=10&result_type=popular-RT");
+
+			//Check twitter response for errors.
+			if ( isset( $tweets->errors[0]->code )) {
+			    // If errors exist, print the first error for a simple notification.
+			    echo "Error encountered: ".$tweets->errors[0]->message." Response code:" .$tweets->errors[0]->code;
+			} else {
+			    // No errors exist. Write tweets to json/txt file.
+			    $file = "tweets_popular.json";
+			    $fh = fopen($file, 'w') or die("can't open file");
+			    fwrite($fh, json_encode($tweets));
+			    fclose($fh);
+			}
+		}
+
+		sleep(1);
+	}while($counter++ <= 50);
+
+
+
+
 	 
 	function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
 	  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
 	  return $connection;
 	}
-
-	$tipo = "recent";
-	if(isset($_GET['type'])) $tipo=$_GET['type'];
-
-	$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
-	 
-	$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=".$notweets[$tipo]."&result_type=mixed");
-	//$tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=diedu89&count=".$notweets);
-	echo json_encode($tweets);
-?>

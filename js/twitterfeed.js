@@ -10,7 +10,7 @@ $(document).ready(function () {
 var popularTweets = [];
 
 function updatePopular(){
-	$.getJSON('gettweets.php?type=popular',
+	$.getJSON('tweets_popular?'+Math.random(),
 					function(response){
 						popularTweets = response.statuses;
 					});
@@ -49,7 +49,7 @@ function updateFeed(){
 	
 	 //$('#twitter-feed').html(headerHTML + loadingHTML);
 	 
-    $.getJSON('gettweets.php?',
+    $.getJSON('tweets_recent.json?'+Math.random(),
         function(response) {
         		var feeds = response.statuses;   
 		   	console.log(feeds)
