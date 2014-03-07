@@ -479,5 +479,16 @@ body {
 
 #container_wrapper {
 	margin-top: 25px;
-	min-height: 485px;
+	height: 0;
+	overflow: hidden;
+}
+
+#container_wrapper iframe,  
+#container_wrapper object,  
+#container_wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

@@ -6466,7 +6466,7 @@ td.visible-xs {
   }
 
   #container_wrapper {
-    min-height: 655px !important;
+   /* min-height: 655px !important;*/
   }
 }
 

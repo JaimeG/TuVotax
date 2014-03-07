@@ -91,77 +91,77 @@
 			'nombre' => 'Zarezion',
 			'inicio' => "6:30 PM",
 			'fin'=>  "6:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
 			'inicio' => "7:00 PM",
 			'fin'=>  "7:29 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
 			'inicio' => "7:30 PM",
 			'fin'=>  "7:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
 			'inicio' => "8:00 PM",
 			'fin'=>  "8:29 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
 			'inicio' => "8:30 PM",
 			'fin'=>  "8:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
 			'inicio' => "9:00 PM",
 			'fin'=>  "9:29 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
 			'inicio' => "9:30 PM",
 			'fin'=>  "9:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
 			'inicio' => "10:00 PM",
 			'fin'=>  "10:29 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Zarezion',
 			'inicio' => "10:30 PM",
 			'fin'=>  "10:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Bum Bam Pop',
 			'inicio' => "11:00 PM",
 			'fin'=>  "11:29 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
 			'nombre' => 'Hora de aventura',
 			'inicio' => "11:30 PM",
 			'fin'=>  "11:59 PM",
-			'invitados' => 'Invitado 1 e Invitado 2'
+			'invitados' => ''
 		);
 
 $actual = null;
