@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="http://source.netandino.com/html5/player-2012-free.js"></script>
+    <div id="container">Cargando ...</div>
+<script type="text/javascript">
+    jwplayer("container").setup({
+      backcolor: "000000",
+    frontcolor: "FFFFFF",
+    lightcolor: "FFFFFF",
+    screencolor: "000000",
+    volume: 100,
+    autostart: "true",
+    controlbar: "over",
+        height: "100%",
+        width: '100%',
+        modes: [
+            { type: "flash", 
+              src: "http://source.netandino.com/html5/player-2012-free.swf", 
+              config: {
+                file: "canal23",
+                streamer: "rtmp://panel.elsalvadordigital.com/canal23",
+                provider: "rtmp"
+              }
+            },
+            { type: "html5",
+              config: {
+                file: "http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8"
+              }
+            },
+            { type: "download" }
+        ]
+
+    });
+</script>
+    
+</body>
+</html>

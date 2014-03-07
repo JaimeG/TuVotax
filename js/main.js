@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
       
       $('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
       $('.instagram.tag').instagram({
-        hash: 'tvx',
+        hash: 'elecciones2014',
         count: 16,
         clientId: clientId
       });
@@ -108,7 +108,7 @@ $('#gifSlider').bxSlider({
   autoControls: true,
 });
 
-$('#pub-tvx-programas').bxSlider({
+$('.pub-tvx-programas').bxSlider({
   mode: 'fade',
   responsive: true,
   auto: true,
