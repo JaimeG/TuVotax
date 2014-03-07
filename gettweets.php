@@ -1,9 +1,10 @@
 <?php
 	session_start();
+	if( !isset($argv[1]) || $argv[1] != "console" )
+		exit(0);
+
 	require_once("twitteroauth/twitteroauth.php"); //Path to twitteroauth library
 	
-	$notweets["recent"] = 30;
-	$notweets["popular"] = 10;
 	$consumerkey = "yK8JOWxMao6uo49Vz7wLrQ";
 	$consumersecret = "9nXebFU3vlZpAB2uquuq9cZLO1d3nacQqujkWMI78Y";
 	$accesstoken = "97114532-v6mktzQJgKNQrPeo9ixPRaINOpuuHm18AmeUc2O9G";
@@ -13,7 +14,7 @@
 	$counter=0;
 	do{
 		if($counter % 20 == 0){		
-			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=30&result_type=recent");
+			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=recent");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.
@@ -24,6 +25,7 @@
 			    $fh = fopen($file, 'w') or die("can't open file");
 			    fwrite($fh, json_encode($tweets));
 			    fclose($fh);
+			    echo "escribe recientes";
 			}
 
 			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=10&result_type=popular-RT");
@@ -38,13 +40,14 @@
 			    $fh = fopen($file, 'w') or die("can't open file");
 			    fwrite($fh, json_encode($tweets));
 			    fclose($fh);
+			    echo "escribe destacados";
 			}
 		}
-
+		echo date('G:h:s') . "\n<br>";
 		sleep(1);
 	}while($counter++ <= 50);
 
-
+	echo "terminado";
 
 
 	 
