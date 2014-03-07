@@ -8,6 +8,36 @@
 
 jQuery(document).ready(function($){
 
+  jwplayer("container").setup({
+      backcolor: "000000",
+    frontcolor: "FFFFFF",
+    lightcolor: "FFFFFF",
+    screencolor: "000000",
+    image: 'http://tvx.com.sv/img/1.jpg',
+    volume: 100,
+    aspectratio: "12:5",
+    autostart: "true",
+    controlbar: "over",
+        width: '100%',
+        modes: [
+            { type: "flash", 
+              src: "http://source.netandino.com/html5/player-2012-free.swf", 
+              config: {
+                file: "canal23",
+                streamer: "rtmp://panel.elsalvadordigital.com/canal23",
+                provider: "rtmp"
+              }
+            },
+            { type: "html5",
+              config: {
+                file: "http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8"
+              }
+            },
+            { type: "download" }
+        ]
+
+    });
+
     function createPhotoElement(photo) {
       var innerHtml = $('<img>')
         .addClass('instagram-image')
@@ -75,7 +105,6 @@ jQuery(document).ready(function($){
     imagePath: 'img/dcsns-dark/'
   });
   
-
   updateShows();
   setInterval(updateShows,60000);
 });
@@ -85,17 +114,11 @@ function updateShows(){
       'getShows.php',
       function(response) {
         var texto = response.actual.nombre + " - " + response.actual.invitados;
-
         $('#prog-actual h1').text(texto);
-
         $('#prog-actual p').text("Hora: " + response.actual.inicio + " - " + response.actual.fin);
-
         texto = response.siguiente.nombre + " - " + response.siguiente.invitados;
-
         $('#prog-mas h1').text(texto);
-
         $('#prog-mas p').text("Hora: " + response.siguiente.inicio + " - " + response.siguiente.fin);
-
       }
     )
 }
@@ -117,7 +140,7 @@ $('.pub-tvx-programas').bxSlider({
 });
 
 $.getJSON('getstatistics.php', function(response){
-    console.log(response);
+    // console.log(response);
 });
 
 

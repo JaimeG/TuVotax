@@ -53,7 +53,7 @@ function updateFeed(){
         function(response) {
         		var feeds = response.statuses;   
 		   	console.log(feeds)
-            var feedHTML = headerHTML + '<div class="scroll_content" style="overflow:auto; max-height:260px">';
+            var feedHTML = headerHTML + '<div class="scroll_content" style="overflow:auto; max-height:360px">';
             var displayCounter = 1;         
             for (var i=0; i<feeds.length; i++) {
 					var tweetscreenname = feeds[i].user.name;

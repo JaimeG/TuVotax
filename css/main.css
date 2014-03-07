@@ -148,7 +148,7 @@ body {
 }
 
 .prog-col {
-	width: 40%;
+	width: 33%;
 	float: left;
 	color: #fff;
 	margin: 0 !important;
@@ -157,8 +157,19 @@ body {
 	-moz-box-sizing:border-box; /* Firefox */
 }
 
+#prog-despues {
+	float: left;
+	width: 17%;
+	color: #fff;
+	padding: 20px 0 0;
+	font-size: 12px;
+	line-height: 1;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 #prog-titulo {
-	width: 20%;
+	width: 14%;
 	float: left;
 	color: #fff;
 	padding: 20px 0 0;
@@ -203,7 +214,7 @@ body {
     background-color:#FFF;
     color:#333;
     overflow:auto;
-	min-height: 457px;
+	min-height: 422px;
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -236,7 +247,7 @@ body {
 }
 
 .scroll_content {
-	max-height: 395px !important;
+	max-height: 395px;
 	padding-right: 10px;
 }
  
@@ -478,8 +489,10 @@ body {
 }
 
 #container_wrapper {
-	margin-top: 25px;
-	height: 0;
+	position: relative;
+	padding-bottom: 56.25%;
+	/*padding-top: -30px;*/
+	height: 0 !important;
 	overflow: hidden;
 }
 
@@ -491,4 +504,12 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#player {
+	margin-top: 25px;
+}
+
+.instagram img {
+	max-width: 168px !important;
 }
