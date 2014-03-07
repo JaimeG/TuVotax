@@ -1620,7 +1620,13 @@ table th[class*="col-"] {
   }
 
   .stream li {
-    width: 320px !important;
+    width: 376px !important;
+    margin-left: 5px 
+
+    }
+
+    .dcsns-content {
+      margin: 10px !important;
     }
 
   .table-responsive {
@@ -6433,8 +6439,35 @@ td.visible-xs {
   .container-fluid {
     margin: 0 2% !important;
   }
+  
+  .fb-comments {
+    height: 510px !important;
+    max-height: 655px !important;
+    width: inherit !important;
+  }
 
+  #youtube-feed ul {
+    margin-top: 15px -5px 24px 5px !important;
+  }
 
+}
+
+@media (min-width: 1300px) {
+  .container-fluid {
+    margin: 0 10% !important;
+  }
+
+  #twitter-feed {
+    min-height: 562px !important; 
+  }
+
+  .scroll_content {
+    max-height: 500px !important;
+  }
+
+  #container_wrapper {
+    min-height: 655px !important;
+  }
 }
 
 .visible-sm {

@@ -136,10 +136,10 @@ body {
 
 #tw-titulo {
 	float: left;
-	padding-top: 7px;
+	padding-top: 15px;
 	width: 25%;
 	line-height: 1;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 #tw-titulo img {
@@ -161,8 +161,8 @@ body {
 	width: 20%;
 	float: left;
 	color: #fff;
-	padding: 6px 0 0;
-	font-size: 20px;
+	padding: 20px 0 0;
+	font-size: 12px;
 	line-height: 1;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
@@ -335,8 +335,6 @@ body {
 	color:#aaa;
 }
 
-.fb-comments, .fb-comments > span[style], .fb_iframe_widget iframe[style]  { width: 400px !important; display: inline-block; position: relative;}
-
 #feedback_0kUp9zCA7kEx1mtES iframe[style] {
 	width: 100% !important;
 }
@@ -424,7 +422,7 @@ body {
 
 #youtube-feed li .yt-title-link {
 	display: block;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 5px auto 12px;
 	text-align: left;
 }
@@ -436,7 +434,7 @@ body {
 #youtube-feed li img {
 	display: block;
 	margin: auto;
-	max-width: 184px;
+	/*max-width: 184px;*/
 	width: 100%;
 }
 
