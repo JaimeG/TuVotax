@@ -163,6 +163,7 @@
 			'fin'=>  "11:59 PM",
 			'invitados' => ''
 		);
+	array_push($shows,$programa);
 
 $actual = null;
 $siguiente = null;
@@ -171,17 +172,20 @@ $indice=0;
 $ahora=strtotime(date('G:i'));
 
 $i=0;
-while(($actual==null || $siguiente==null) && $i < count($shows)){
+for($i=0; $i<count($shows); $i++){
 	$programa = $shows[$i];
-
-	//echo strtotime($programa["inicio"]) . " - " .  $ahora . " - " . strtotime($programa["fin"]) . "<br>";
 
 	if( ( $ahora >= strtotime($programa["inicio"]) ) && ( $ahora <= strtotime($programa["fin"]) )){
 		$actual = $programa;
-		$siguiente = $shows[$i+1];
+		
+		if($i+1 >= count($shows) )
+			$siguiente = array('nombre' => "",'inicio' =>"" ,'fin' =>"", 'invitados' => ""  );
+		else
+			$siguiente = $shows[$i+1];
+
 		break;
 	}
-	$i++;
+
 }
 
 echo json_encode(
