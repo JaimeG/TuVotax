@@ -81,88 +81,74 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Audiopuntura',
-			'inicio' => "6:00 PM",
-			'fin'=>  "6:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Zarezion',
+			'nombre' => 'Heroman',
 			'inicio' => "6:30 PM",
 			'fin'=>  "6:59 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Dragon Ball Z',
 			'inicio' => "7:00 PM",
 			'fin'=>  "7:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Zarezion',
+			'nombre' => 'Los Caballeros del Zodiaco',
 			'inicio' => "7:30 PM",
 			'fin'=>  "7:59 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Deadwood',
 			'inicio' => "8:00 PM",
-			'fin'=>  "8:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Zarezion',
-			'inicio' => "8:30 PM",
 			'fin'=>  "8:59 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Bum Bam Pop',
+			'nombre' => 'Don Quijote cabalga de nuevo',
 			'inicio' => "9:00 PM",
-			'fin'=>  "9:29 PM",
+			'fin'=>  "11:34 PM",
 			'invitados' => ''
 		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Zarezion',
-			'inicio' => "9:30 PM",
-			'fin'=>  "9:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Bum Bam Pop',
-			'inicio' => "10:00 PM",
-			'fin'=>  "10:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Zarezion',
-			'inicio' => "10:30 PM",
-			'fin'=>  "10:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Bum Bam Pop',
-			'inicio' => "11:00 PM",
-			'fin'=>  "11:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Hora de aventura',
-			'inicio' => "11:30 PM",
-			'fin'=>  "11:59 PM",
-			'invitados' => ''
-		);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Zarezion',
+	// 		'inicio' => "9:30 PM",
+	// 		'fin'=>  "9:59 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Bum Bam Pop',
+	// 		'inicio' => "10:00 PM",
+	// 		'fin'=>  "10:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Zarezion',
+	// 		'inicio' => "10:30 PM",
+	// 		'fin'=>  "10:59 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Bum Bam Pop',
+	// 		'inicio' => "11:00 PM",
+	// 		'fin'=>  "11:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Hora de aventura',
+	// 		'inicio' => "11:30 PM",
+	// 		'fin'=>  "11:59 PM",
+	// 		'invitados' => ''
+	// 	);
 	array_push($shows,$programa);
 
 $actual = null;
