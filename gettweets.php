@@ -33,7 +33,7 @@
 
 		if($counter % 30 == 0){		
 
-			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=10&result_type=popular-RT");
+			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=popular-RT");
 
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
