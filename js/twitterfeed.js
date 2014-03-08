@@ -32,7 +32,7 @@ function scrollPopular(){
 
 function updateFeed(){
  	var displaylimit = 30;
-	var screenname = "#ForoUno";
+	var screenname = "#TuVotasTVX";
    var showdirecttweets = false;
    var showretweets = true;
    var showtweetlinks = true;
