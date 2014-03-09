@@ -34,7 +34,8 @@
 		if($counter % 35 == 0){		
 
 			//$tweets_popular = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=500&result_type=popular");
-			$tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
+			// $tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
+			$tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=tuvotastvx");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.
