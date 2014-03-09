@@ -46,72 +46,73 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Cafeina',
+			'nombre' => 'Las Trillizas de belleville',
 			'inicio' => "12:00 PM",
-			'fin'=>  "2:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Extravagando',
-			'inicio' => "2:30 PM",
 			'fin'=>  "3:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'BumBamPop',
+			'nombre' => 'Maratón anime - Dragon Ball Z',
 			'inicio' => "3:30 PM",
+			'fin'=>  "3:59 PM",
+			'invitados' => ''
+		);
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Maratón anime - Los Caballeros del Zodiaco',
+			'inicio' => "4:00 PM",
 			'fin'=>  "4:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Zarezion',
+			'nombre' => 'Maratón anime - Samurai Champloo',
 			'inicio' => "4:30 PM",
+			'fin'=>  "4:59 PM",
+			'invitados' => ''
+		);
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Maratón anime - Full Metal Alchemist',
+			'inicio' => "5:00 PM",
 			'fin'=>  "5:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Audiopuntura',
+			'nombre' => 'Maratón anime - Gungrave',
 			'inicio' => "5:30 PM",
-			'fin'=>  "6:29 PM",
+			'fin'=>  "5:59 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Heroman',
-			'inicio' => "6:30 PM",
-			'fin'=>  "6:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Dragon Ball Z',
-			'inicio' => "7:00 PM",
+			'nombre' => 'Maratón anime - Heroman',
+			'inicio' => "6:00 PM",
 			'fin'=>  "7:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Los Caballeros del Zodiaco',
+			'nombre' => 'Especial - Segunda vuelta Previo a las elecciones 2014',
 			'inicio' => "7:30 PM",
-			'fin'=>  "7:59 PM",
+			'fin'=>  "8:29 PM",
 			'invitados' => ''
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Deadwood',
-			'inicio' => "8:00 PM",
+			'nombre' => 'El Canto de Los Sueños',
+			'inicio' => "8:30 PM",
 			'fin'=>  "8:59 PM",
 			'invitados' => ''
 		);
+
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Don Quijote cabalga de nuevo',
+			'nombre' => 'La Teta y La Luna',
 			'inicio' => "9:00 PM",
-			'fin'=>  "11:34 PM",
+			'fin'=>  "11:59 PM",
 			'invitados' => ''
 		);
 	// array_push($shows,$programa);

@@ -21,21 +21,28 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/jquery.bxslider.css">
-        <link rel="stylesheet" href="css/twTv.css">
         
         <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <script type="text/javascript" src="http://source.netandino.com/html5/player-2012-free.js"></script>
-
-        <style>
-        .container {
-            padding-right: 50px !important;
-            padding-left: 50px !important;
-          }
-        </style>
         
+        <style>
+          
+          .instagram img {
+             max-width: inherit !important;
+          }
 
+          .instagram {
+            max-height: inherit !important;
+          }
+
+          .container-fluid {
+            margin: 0 2.3% !important;
+          }
+
+        </style>
+  
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -77,12 +84,12 @@
     </div>
     <!-- /header -->
 
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row-fluid">
         
         <div class="col-lg-12">
             <br>
-            <div id="twitter-feed"></div>
+            <div class="instagram tag"></div>
         </div>
 
       </div> 
@@ -141,6 +148,43 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script type="text/javascript" src="js/twitterfeed_only_popular.js"></script>
+        <script type"text/javascript">
+            function createPhotoElement(photo) {
+            var innerHtml = $('<img>')
+              .addClass('instagram-image')
+              .attr('src', photo.images.thumbnail.url);
+
+            innerHtml = $('<a>')
+              .attr('target', '_blank')
+              .attr('href', photo.link)
+              .append(innerHtml);
+
+            return $('<div>')
+              .addClass('col-xs-2')
+              .attr('id', photo.id)
+              .append(innerHtml);
+          }
+
+          function didLoadInstagram(event, response) {
+            var that = this;
+
+            $.each(response.data, function(i, photo) {
+              $(that).append(createPhotoElement(photo));
+            });
+          }
+
+          $(document).ready(function() {
+            var clientId = '391f7a62e0d3453aabafe7e0414b72b5';
+            
+            $('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
+            $('.instagram.tag').instagram({
+              hash: 'elecciones2014',
+              count: 32,
+              clientId: clientId
+            });
+            
+          });
+        </script>
         
          <script>
             var _gaq=[['_setAccount','UA-45097795-4'],['_trackPageview']];
