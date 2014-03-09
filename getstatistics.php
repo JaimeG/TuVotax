@@ -3,15 +3,25 @@
     
     $dom = new DOMDocument('1.0');
 
-    if(!$dom->loadHTML(curl("http://preliminar2014.tse.gob.sv/resultados/99/DPR999999.htm")))
+    if(!$dom->loadHTML(curl("http://elecciones2014.tse.gob.sv/resultados_marzo/99/DPR999999.htm")))
         die('error');
 
-    $procesadas = $dom->getElementById('res_pjrvesc_val');
-    $noprocesadas = $dom->getElementById('res_jrvnoesc_val');
+    $procesadas = $dom->getElementById('proc_por');
+    $noprocesadas = $dom->getElementById('nopro_por');
     $hora = $dom->getElementById('xhora');
 
-    $fmln = $dom->getElementById('P001');
-    $arena = $dom->getElementById('P005');
+    $finder = new DomXPath($dom);
+    $nodes = $finder->query("//*[contains(@class, 'votos001')]");
+    
+    foreach ($nodes as $node) {
+        $fmln = $node;
+    }
+
+    $nodes = $finder->query("//*[contains(@class, 'votos002')]");
+    
+    foreach ($nodes as $node) {
+        $arena = $node;
+    }
 
     $caracteres = array("\t", "\r", "\n", " ", "%");
     $fmln = str_replace($caracteres, "", $fmln->nodeValue);
