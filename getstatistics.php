@@ -18,7 +18,7 @@
     $arena = str_replace($caracteres, "", $arena->nodeValue);
     $procesadas = str_replace($caracteres, "", $procesadas->nodeValue);
     $noprocesadas = str_replace($caracteres, "", $noprocesadas->nodeValue);
-    $hora = str_replace($caracteres, "", $hora);
+    $hora = str_replace($caracteres, "", $hora->nodeValue);
 
     $file = "statistics.json";
     $fh = fopen($file, 'w') or die("can't open file");
@@ -32,7 +32,7 @@
                         )
                     )
             );
-    
+
     fclose($fh);
 
     // Defining the basic cURL function
