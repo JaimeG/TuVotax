@@ -132,7 +132,7 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | AJosé Luís Merino Secretario nacional de organización FMLN',
+			'nombre' => 'Entrevista | José Luís Merino Secretario nacional de organización FMLN',
 			'inicio' => "4:00 PM",
 			'fin'=>  "4:29 PM",
 			'invitados' => ''
@@ -140,15 +140,15 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Carmen Áida Lazo (Decana ESEN) - Mario Cerna (Economista) - EN VIVO',
+			'nombre' => 'Entrevista | Astor Escalante Ex Fiscal General de la República - Henry Campos (Ex Viceministro de seguridad)',
 			'inicio' => "4:30 PM",
-			'fin'=>  "5:29 PM",
+			'fin'=>  "4:59 PM",
 			'invitados' => ''
 		);
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Rev. Vitalino Cifilox - William Rico - EN VIVO',
+			'nombre' => 'Entrevista | Carmen Áida Lazo (Decana de la ESEN) - Mario Cerna (Economista)',
 			'inicio' => "5:00 PM",
 			'fin'=>  "5:29 PM",
 			'invitados' => ''
@@ -156,7 +156,7 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Leonel Herrera - EN VIVO',
+			'nombre' => 'Entrevista | Gerson Martínez Ministro de obras públicas',
 			'inicio' => "5:30 PM",
 			'fin'=>  "5:59 PM",
 			'invitados' => ''
