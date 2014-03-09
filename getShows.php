@@ -11,110 +11,112 @@
 		);
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Class icons',
+			'nombre' => 'Especial - Segunda vuelta Elecciones presidenciales 2014 - EN VIVO 16 horas de Transmición',
 			'inicio' => "6:00 AM",
-			'fin'=>  "7:59 AM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'GNX',
-			'inicio' => "8:00 AM",
-			'fin'=>  "8:59 AM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'En Vivo',
-			'inicio' => "9:00 AM",
 			'fin'=>  "9:59 AM",
 			'invitados' => ''
 		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Videotópico',
-			'inicio' => "10:00 AM",
-			'fin'=>  "10:59 AM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Novascopio',
-			'inicio' => "11:00 AM",
-			'fin'=>  "11:59 AM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Las Trillizas de belleville',
-			'inicio' => "12:00 PM",
-			'fin'=>  "3:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Dragon Ball Z',
-			'inicio' => "3:30 PM",
-			'fin'=>  "3:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Los Caballeros del Zodiaco',
-			'inicio' => "4:00 PM",
-			'fin'=>  "4:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Samurai Champloo',
-			'inicio' => "4:30 PM",
-			'fin'=>  "4:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Full Metal Alchemist',
-			'inicio' => "5:00 PM",
-			'fin'=>  "5:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Gungrave',
-			'inicio' => "5:30 PM",
-			'fin'=>  "5:59 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Maratón anime - Heroman',
-			'inicio' => "6:00 PM",
-			'fin'=>  "7:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Especial - Segunda vuelta Previo a las elecciones 2014',
-			'inicio' => "7:30 PM",
-			'fin'=>  "8:29 PM",
-			'invitados' => ''
-		);
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'El Canto de Los Sueños',
-			'inicio' => "8:30 PM",
-			'fin'=>  "8:59 PM",
-			'invitados' => ''
-		);
 
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'La Teta y La Luna',
-			'inicio' => "9:00 PM",
-			'fin'=>  "11:59 PM",
-			'invitados' => ''
-		);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'GNX',
+	// 		'inicio' => "8:00 AM",
+	// 		'fin'=>  "8:59 AM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'En Vivo',
+	// 		'inicio' => "9:00 AM",
+	// 		'fin'=>  "9:59 AM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Videotópico',
+	// 		'inicio' => "10:00 AM",
+	// 		'fin'=>  "10:59 AM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Novascopio',
+	// 		'inicio' => "11:00 AM",
+	// 		'fin'=>  "11:59 AM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Las Trillizas de belleville',
+	// 		'inicio' => "12:00 PM",
+	// 		'fin'=>  "3:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Dragon Ball Z',
+	// 		'inicio' => "3:30 PM",
+	// 		'fin'=>  "3:59 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Los Caballeros del Zodiaco',
+	// 		'inicio' => "4:00 PM",
+	// 		'fin'=>  "4:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Samurai Champloo',
+	// 		'inicio' => "4:30 PM",
+	// 		'fin'=>  "4:59 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Full Metal Alchemist',
+	// 		'inicio' => "5:00 PM",
+	// 		'fin'=>  "5:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Gungrave',
+	// 		'inicio' => "5:30 PM",
+	// 		'fin'=>  "5:59 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Maratón anime - Heroman',
+	// 		'inicio' => "6:00 PM",
+	// 		'fin'=>  "7:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Especial - Segunda vuelta Previo a las elecciones 2014',
+	// 		'inicio' => "7:30 PM",
+	// 		'fin'=>  "8:29 PM",
+	// 		'invitados' => ''
+	// 	);
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'El Canto de Los Sueños',
+	// 		'inicio' => "8:30 PM",
+	// 		'fin'=>  "8:59 PM",
+	// 		'invitados' => ''
+	// 	);
+
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'La Teta y La Luna',
+	// 		'inicio' => "9:00 PM",
+	// 		'fin'=>  "11:59 PM",
+	// 		'invitados' => ''
+	// 	);
+
 	// array_push($shows,$programa);
 	// $programa = array(
 	// 		'nombre' => 'Zarezion',

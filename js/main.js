@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
     frontcolor: "FFFFFF",
     lightcolor: "FFFFFF",
     screencolor: "000000",
-    image: 'http://tvx.com.sv/img/1.jpg',
+    image: 'http://www.tvx.com.sv/tuvotasTVX/img/1.jpg',
     volume: 100,
     aspectratio: "12:5",
     autostart: "true",
