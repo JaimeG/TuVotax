@@ -7,7 +7,7 @@
         die('error');
 
     $procesadas = $dom->getElementById('proc_por');
-    $noprocesadas = $dom->getElementById('nopro_por');
+    $noprocesadas = $dom->getElementById('pend_por');
     $hora = $dom->getElementById('xhora');
 
     $finder = new DomXPath($dom);
