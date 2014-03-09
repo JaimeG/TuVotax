@@ -32,11 +32,7 @@ function scrollPopular(){
 
 function updateFeed(){
  	var displaylimit = 30;
-<<<<<<< HEAD
-	var screenname = "#TuVotasTVX";
-=======
 	var screenname = "#TuVotasTvx";
->>>>>>> 638e30d5a5ae184141fb77f9a7d26078bd77d82f
    var showdirecttweets = false;
    var showretweets = true;
    var showtweetlinks = true;
