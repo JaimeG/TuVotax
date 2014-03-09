@@ -32,11 +32,7 @@ function scrollPopular(){
 
 function updateFeed(){
  	var displaylimit = 30;
-<<<<<<< HEAD
-	var screenname = "#TuVotasTVX";
-=======
 	var screenname = "#TuVotasTvx";
->>>>>>> 638e30d5a5ae184141fb77f9a7d26078bd77d82f
    var showdirecttweets = false;
    var showretweets = true;
    var showtweetlinks = true;
@@ -53,7 +49,7 @@ function updateFeed(){
 	
 	 //$('#twitter-feed').html(headerHTML + loadingHTML);
 	 
-    $.getJSON('tweets_recent.json?'+Math.random(),
+    $.getJSON('tweets_popular.json?'+Math.random(),
         function(response) {
         		var feeds = response.statuses;   
             var feedHTML = headerHTML + '<div class="scroll_content" style="overflow:auto; max-height:360px">';

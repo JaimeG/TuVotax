@@ -1,7 +1,9 @@
 <?php
 	session_start();
-	if( !isset($argv[1]) || $argv[1] != "console" )
+	if( !isset($argv[1]) || $argv[1] != "console" ){
+		echo "Permission denied";
 		exit(0);
+	}
 
 	require_once("twitteroauth/twitteroauth.php"); //Path to twitteroauth library
 	
@@ -13,7 +15,7 @@
 
 	$counter=0;
 	do{
-		if($counter % 20 == 0){		
+		if($counter % 15 == 0){		
 			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=recent");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
@@ -25,10 +27,13 @@
 			    $fh = fopen($file, 'w') or die("can't open file");
 			    fwrite($fh, json_encode($tweets));
 			    fclose($fh);
-			    echo "escribe recientes";
+			    echo "escribe recientes\n";
 			}
+		}
 
-			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23forouno&count=10&result_type=popular-RT");
+		if($counter % 30 == 0){		
+
+			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=popular-RT");
 
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
@@ -40,10 +45,10 @@
 			    $fh = fopen($file, 'w') or die("can't open file");
 			    fwrite($fh, json_encode($tweets));
 			    fclose($fh);
-			    echo "escribe destacados";
+			    echo "escribe destacados\n";
 			}
 		}
-		echo date('G:h:s') . "\n<br>";
+		echo date('G:i:s') . "<br>\n";
 		sleep(1);
 	}while($counter++ <= 50);
 
