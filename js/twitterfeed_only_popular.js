@@ -2,6 +2,8 @@ $(document).ready(function () {
 	updateFeed();
 	updatePopular();
 	scrollPopular();
+	updateShows();
+  	setInterval(updateShows,60000);
 	setInterval(updateFeed,30000);
 	setInterval(updatePopular,32000);
 	setInterval(scrollPopular,8000);
@@ -11,10 +13,13 @@ var popularTweets = [];
 
 function updatePopular(){
 	$.getJSON('tweets_popular.json?'+Math.random(),
-					function(response){
-						popularTweets = response.statuses;
+					function(tweets){
+						popularTweets = [];
+						for (var i=0; i<tweets.length && popularTweets.length < 5; i++) {
+							if(typeof tweets[i].retweeted_status != 'undefined')
+								popularTweets.push(tweets[i]);
+						}
 					});
-    			
 }
 
 function scrollPopular(){
@@ -51,7 +56,7 @@ function updateFeed(){
 	 
     $.getJSON('tweets_popular.json?'+Math.random(),
         function(response) {
-        		var feeds = response.statuses;   
+        		var feeds = response;   
             var feedHTML = headerHTML + '<div class="scroll_content" style="overflow:auto; max-height:360px">';
             var displayCounter = 1;         
             for (var i=0; i<feeds.length; i++) {
@@ -80,7 +85,7 @@ function updateFeed(){
 					}
 					 
 					 //Generate twitter feed HTML based on selected options
-					if (((showretweets == true) || ((isaretweet == false) && (showretweets == false))) && ((showdirecttweets == true) || ((showdirecttweets == false) && (isdirect == false)))) { 
+					if ( isaretweet ) { 
 						if ((feeds[i].text.length > 1) && (displayCounter <= displaylimit)) {       
 							if (showtweetlinks == true) {
 								status = addlinks(status); 
@@ -267,3 +272,17 @@ function tweetcarousel() {
 }
 
 tweetcarousel();
+
+function updateShows(){
+  $.getJSON(
+      'getShows.php',
+      function(response) {
+        var texto = response.actual.nombre + " - " + response.actual.invitados;
+        $('#prog-actual h1').text(texto);
+        $('#prog-actual p').text("Hora: " + response.actual.inicio + " - " + response.actual.fin);
+        texto = response.siguiente.nombre + " - " + response.siguiente.invitados;
+        $('#prog-mas h1').text(texto);
+        $('#prog-mas p').text("Hora: " + response.siguiente.inicio + " - " + response.siguiente.fin);
+      }
+    )
+}

@@ -1,11 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
 	<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -71,15 +63,18 @@
     </div>
     <!-- /header -->
 
+              <br>
     <!-- Streaming - Facebook  -->
     <div class="container-fluid">
       <div class="row-fluid">
 
           <div class="col-sm-12">
-          	<div class="contenido">
+            <div class="contenido">
           		<h1>Contenido Elecciones</h1>
               <h3>FMLN: <span id="fmln_porcentaje"></span></h3>
               <h3>ARENA: <span id="arena_porcentaje"></span></h3>
+              <br>
+              <canvas id="chart_resultados" width="300" height="300"></canvas>
           	</div>
           </div>
     
@@ -132,12 +127,56 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/vendor/Chart.min.js"></script>
+        <script src="js/twitterfeed.js"></script>
         <script>
-            $.getJSON('getstatistics.php', function(response){
+          $(function(){
+            $.getJSON('statistics.json?' + Math.random(), function(response){
+              var fmln=parseFloat(response.fmln.replace("%",""));
+              var arena=parseFloat(response.arena.replace("%",""));
+              var noprocesables=100-arena-fmln;
               $("#fmln_porcentaje").text(response.fmln);
               $("#arena_porcentaje").text(response.arena);
+              var data = [
+                {
+                  value: fmln,
+                  color:"#d21e29"
+                },
+                {
+                  value : arena,
+                  color : "#022c74"
+                },
+                {
+                  value : noprocesables,
+                  color : "#aeaeae"
+                }
+              ];
+              console.log(data);
+              //Get the context of the canvas element we want to select
+              var ctx = document.getElementById("chart_resultados").getContext("2d");
+              var myNewChart = new Chart(ctx).Pie(data,{});
             });
+
+
+            updateShows();
+            setInterval(updateShows,60000);
+
+          });
+
+
+          function updateShows(){
+            $.getJSON(
+                'getShows.php',
+                function(response) {
+                  var texto = response.actual.nombre + " - " + response.actual.invitados;
+                  $('#prog-actual h1').text(texto);
+                  $('#prog-actual p').text("Hora: " + response.actual.inicio + " - " + response.actual.fin);
+                  texto = response.siguiente.nombre + " - " + response.siguiente.invitados;
+                  $('#prog-mas h1').text(texto);
+                  $('#prog-mas p').text("Hora: " + response.siguiente.inicio + " - " + response.siguiente.fin);
+                }
+              )
+          }
 
         </script>
   

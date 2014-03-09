@@ -11,8 +11,12 @@ var popularTweets = [];
 
 function updatePopular(){
 	$.getJSON('tweets_popular.json?'+Math.random(),
-					function(response){
-						popularTweets = response.statuses;
+					function(tweets){
+						popularTweets = [];
+						for (var i=0; i<tweets.length && popularTweets.length < 5; i++) {
+							if(typeof tweets[i].retweeted_status != 'undefined')
+								popularTweets.push(tweets[i]);
+						}
 					});
     			
 }
@@ -21,7 +25,7 @@ function scrollPopular(){
 	if(popularTweets.length == 0) return;
 
 	var nextTweet = popularTweets.shift();
-	$("#tw-destacados p:last-child").html(nextTweet.text);
+	$("#tw-destacados p:last-child").html(nextTweet.text.substr(3,nextTweet.text.length));
 	$("#tw-destacados p:first-child").animate({marginTop:'-60px', opacity:0}, 1500, function(){
 		$("#tw-destacados p:last-child").after($("#tw-destacados p:first-child"));
 		$("#tw-destacados p:last-child").css({marginTop:'0px'});

@@ -8,6 +8,9 @@
 
 jQuery(document).ready(function($){
 
+  updateShows();
+  setInterval(updateShows,60000);
+
   jwplayer("container").setup({
       backcolor: "000000",
     frontcolor: "FFFFFF",
@@ -105,8 +108,6 @@ jQuery(document).ready(function($){
     imagePath: 'img/dcsns-dark/'
   });
   
-  updateShows();
-  setInterval(updateShows,60000);
 });
 
 function updateShows(){

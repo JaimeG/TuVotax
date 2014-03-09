@@ -16,7 +16,7 @@
 	$counter=0;
 	do{
 		if($counter % 15 == 0){		
-			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=recent");
+			$tweets_recent = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=recent");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.
@@ -25,16 +25,16 @@
 			    // No errors exist. Write tweets to json/txt file.
 			    $file = "tweets_recent.json";
 			    $fh = fopen($file, 'w') or die("can't open file");
-			    fwrite($fh, json_encode($tweets));
+			    fwrite($fh, json_encode($tweets_recent));
 			    fclose($fh);
 			    echo "escribe recientes\n";
 			}
 		}
 
-		if($counter % 30 == 0){		
+		if($counter % 35 == 0){		
 
-			$tweets = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=popular-RT");
-
+			//$tweets_popular = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=500&result_type=popular");
+			$tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.
@@ -43,7 +43,7 @@
 			    // No errors exist. Write tweets to json/txt file.
 			    $file = "tweets_popular.json";
 			    $fh = fopen($file, 'w') or die("can't open file");
-			    fwrite($fh, json_encode($tweets));
+			    fwrite($fh, json_encode($tweets_popular));
 			    fclose($fh);
 			    echo "escribe destacados\n";
 			}
