@@ -70,7 +70,7 @@ jQuery(document).ready(function($){
       
       $('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
       $('.instagram.tag').instagram({
-        hash: 'elecciones2014',
+        hash: 'tuvotastvx',
         count: 16,
         clientId: clientId
       });

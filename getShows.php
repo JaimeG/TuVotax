@@ -9,11 +9,204 @@
 			'fin'=>  "5:59 AM",
 			'invitados' => ''
 		);
+
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Especial - Segunda vuelta Elecciones presidenciales 2014 - EN VIVO 16 horas de Transmición',
-			'inicio' => "6:00 AM",
+			'nombre' => 'Entrevista | Óscar Picardo Elmer Crespín - EN VIVO ',
+			'inicio' => "7:00 AM",
+			'fin'=>  "7:29 AM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Walter Araujo - EN VIVO ',
+			'inicio' => "8:00 AM",
+			'fin'=>  "8:59 AM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Medardo Gonzáles - Secretario general del FMLN - EN VIVO ',
+			'inicio' => "9:00 AM",
 			'fin'=>  "9:59 AM",
+			'invitados' => ''
+		);
+
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Entrevista | César Ríos - Cecibel Roldán - EN VIVO ',
+	// 		'inicio' => "9:30 AM",
+	// 		'fin'=>  "9:59 AM",
+	// 		'invitados' => ''
+	// 	);
+
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Entrevista | César Ríos Director del Instituto Salvadoreño del migrante - Cecibel Roldán (Ciudadanía Activa) - EN VIVO ',
+	// 		'inicio' => "10:00 AM",
+	// 		'fin'=>  "10:29 AM",
+	// 		'invitados' => ''
+	// 	);
+
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Entrevista | Eugenio Rojas - Gabriela Montaño - EN VIVO ',
+	// 		'inicio' => "10:30 AM",
+	// 		'fin'=>  "10:59 AM",
+	// 		'invitados' => ''
+	// 	);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Jorge Velado - Presidente del COENA - EN VIVO ',
+			'inicio' => "10:30 AM",
+			'fin'=>  "10:59 AM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Gabriela Montaño Presidenta de la comisión de bolivia - Eugenio Rojas Presidente del senado de bolivia',
+			'inicio' => "11:00 AM",
+			'fin'=>  "11:29 AM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Hato Hasbún - Secretario de Asuntos Estratégicos de la Presidencia',
+			'inicio' => "11:30 AM",
+			'fin'=>  "11:59 AM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Lorena Peña - Diputada del FMLN',
+			'inicio' => "12:00 PM",
+			'fin'=>  "12:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Margarita Velado - EN VIVO ',
+			'inicio' => "1:00 PM",
+			'fin'=>  "1:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Especial | Segunda vuelta elecciones presidenciales 2014 - Notas / Capsulas - EN VIVO',
+			'inicio' => "1:30 PM",
+			'fin'=>  "2:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Eliseo Ascencio, Director de ASDIAPROSAL - Julio Merino, Presidente de Fuerza Cristiana',
+			'inicio' => "2:30 PM",
+			'fin'=>  "2:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Ernesto Muyshondt - Vicepresidente de ideología del COENA',
+			'inicio' => "3:00 PM",
+			'fin'=>  "3:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Elmer Crespín (Investigador de la UFG) - José Luís Merino - EN VIVO',
+			'inicio' => "3:30 PM",
+			'fin'=>  "3:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Astor Escalante (Ex Fiscal general de la república) - Henry Campos (Ex Viceministro de seguridad) - EN VIVO',
+			'inicio' => "4:00 PM",
+			'fin'=>  "4:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Carmen Áida Lazo (Decana ESEN) - Mario Cerna (Economista) - EN VIVO',
+			'inicio' => "4:30 PM",
+			'fin'=>  "5:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Rev. Vitalino Cifilox - William Rico - EN VIVO',
+			'inicio' => "5:00 PM",
+			'fin'=>  "5:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Leonel Herrera - EN VIVO',
+			'inicio' => "5:30 PM",
+			'fin'=>  "5:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Manuel Zelaya - Patricia Rodas - EN VIVO',
+			'inicio' => "6:00 PM",
+			'fin'=>  "6:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Óscar Picardo (Director del centro de estudios ciudadanos de la UFG) - Elmer Crespín (Investigador de la UFG) - EN VIVO',
+			'inicio' => "6:30 PM",
+			'fin'=>  "6:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Marcos Rodríguez (Director de El Salvador Adelante) - Facundo Guardado (Coordinador de temas de seguridad ARENA) - EN VIVO',
+			'inicio' => "7:00 PM",
+			'fin'=>  "7:39 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Marcos Rodríguez (Director de El Salvador Adelante) - Facundo Guardado (Coordinador de temas de seguridad ARENA) - EN VIVO',
+			'inicio' => "7:40 PM",
+			'fin'=>  "7:59 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Roberto Rugamas - Guillermo Miranda - EN VIVO',
+			'inicio' => "8:00 PM",
+			'fin'=>  "8:29 PM",
+			'invitados' => ''
+		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Entrevista | Gerson Martínez - Alberto Arene - Juan José Martell - EN VIVO',
+			'inicio' => "9:00 PM",
+			'fin'=>  "9:59 PM",
 			'invitados' => ''
 		);
 
