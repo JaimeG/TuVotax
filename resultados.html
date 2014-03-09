@@ -138,8 +138,8 @@
                   </div>
                 <h3>ARENA: <span id="arena_porcentaje"></span></h3>
                 <br>
-                  <p>Procesadas: <span id=""></span></p>
-                  <p>Pendientes: <span id=""></span></p>
+                  <p>Procesadas: <span id="porc_procesadas"></span></p>
+                  <p>Pendientes: <span id="porc_pendientes"></span></p>
             </div>
     
           <div class="col-sm-6">
@@ -186,11 +186,11 @@
         <script>
           $(function(){
             $.getJSON('statistics.json?' + Math.random(), function(response){
-              var fmln=parseFloat(response.fmln.replace("%",""));
-              var arena=parseFloat(response.arena.replace("%",""));
+              var fmln=parseFloat(response.fmln);
+              var arena=parseFloat(response.arena);
               var noprocesables=100-arena-fmln;
-              $("#fmln_porcentaje").text(response.fmln);
-              $("#arena_porcentaje").text(response.arena);
+              $("#fmln_porcentaje").text(response.fmln + " %");
+              $("#arena_porcentaje").text(response.arena + " %");
               var data = [
                 {
                   value: fmln,
@@ -200,7 +200,13 @@
                   value : arena,
                   color : "#022c74"
                 },
+                {
+                  value : noprocesables,
+                  color : "#C0C0C0"
+                }
               ];
+              $("#porc_procesadas").text(response.procesadas + " %");
+              $("#porc_pendientes").text(response.noprocesadas + " %");
               console.log(data);
               //Get the context of the canvas element we want to select
               var ctx = document.getElementById("chart_resultados").getContext("2d");
