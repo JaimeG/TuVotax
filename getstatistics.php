@@ -8,7 +8,7 @@
 
     $fmln = $dom->getElementById('P001');
     $arena = $dom->getElementById('P005');
-    $caracteres = array("\t", "\r", "\n", " ");
+    $caracteres = array("\t", "\r", "\n", " ", "%");
     $fmln = str_replace($caracteres, "", $fmln->nodeValue);
     $arena = str_replace($caracteres, "", $arena->nodeValue);
     
