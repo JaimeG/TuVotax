@@ -42,34 +42,36 @@
             background-color: #d21e29;
             float: left;
             height: 25px;
-            width: 50%
+            width: 25px;
+            margin-right: 15px;
           }
 
           #blanco {
             background-color: #fff;
             float: left;
             height: 25px;
-            width: 33.33%
+            width: 25px;
           }
 
           #rojoa {
             background-color: #e10016;
             float: left;
-            width: 33.33%;
+            width: 25px;
             height: 25px;
           }
 
           #blancoa {
             background-color: #fff;
             float: left;
-            width: 33.33%;
+            width: 25px;
             height: 25px;
           }
 
           #azul {
             background-color: #0f2b72;
             float: left;
-            width: 50%;
+            margin-right: 15px;
+            width: 25px;
             height: 25px;
           }
 
@@ -127,23 +129,18 @@
       <div class="row-fluid">
           <div class="contenido">
             <div class="col-sm-6">
-            		<h1>Resultados Preliminares <br> Tribunal Supremo Electoral</h1>
-                <div class="contenedor-bandera">
-                    <div id="rojo"></div>
-                  </div>
-                <h3>FMLN: <span id="fmln_porcentaje"></span></h3>
+            		<h1 style="margin-top:25px;">Resultados Preliminares <br> Tribunal Supremo Electoral</h1>
 
-                 <div class="contenedor-bandera">
-                    <div id="azul"></div>
-                  </div>
-                <h3>ARENA: <span id="arena_porcentaje"></span></h3>
+                <h3 style="margin-top:100px;"><div id="rojo"></div> FMLN: <span id="fmln_porcentaje"></span></h3>
+                <h3><div id="azul"></div>ARENA: <span id="arena_porcentaje"></span></h3>
                 <br>
                   <p>Procesadas: <span id=""></span></p>
                   <p>Pendientes: <span id=""></span></p>
+                  <p>Datos de las: <span id=""></span></p>
             </div>
     
           <div class="col-sm-6">
-             <canvas id="chart_resultados" width="400" height="400"></canvas>
+             <canvas id="chart_resultados" style="margin-top:25px" width="400" height="400"></canvas>
           </div>
 
           <p>Fuente: http//:www.tse.gob.sv</p>

@@ -124,7 +124,7 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Elmer Crespín (Investigador de la UFG) - José Luís Merino - EN VIVO',
+			'nombre' => 'Entrevista | Napoleon Garcia (Censura Cero) - Javier Melgar (Oveja Negra) - Gerson Vichez -PROGRE',
 			'inicio' => "3:30 PM",
 			'fin'=>  "3:59 PM",
 			'invitados' => ''
@@ -132,7 +132,7 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Astor Escalante (Ex Fiscal general de la república) - Henry Campos (Ex Viceministro de seguridad) - EN VIVO',
+			'nombre' => 'Entrevista | AJosé Luís Merino Secretario nacional de organización FMLN',
 			'inicio' => "4:00 PM",
 			'fin'=>  "4:29 PM",
 			'invitados' => ''
