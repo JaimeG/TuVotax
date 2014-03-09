@@ -2,8 +2,8 @@ $(document).ready(function () {
 	updateFeed();
 	updatePopular();
 	scrollPopular();
-	setInterval(updateFeed,30000);
-	setInterval(updatePopular,32000);
+	setInterval(updateFeed,20000);
+	setInterval(updatePopular,25000);
 	setInterval(scrollPopular,8000);
 });
 
@@ -18,7 +18,6 @@ function updatePopular(){
 								popularTweets.push(tweets[i]);
 						}
 					});
-    			
 }
 
 function scrollPopular(){
