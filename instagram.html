@@ -27,7 +27,22 @@
 
         <script type="text/javascript" src="http://source.netandino.com/html5/player-2012-free.js"></script>
         
+        <style>
+          
+          .instagram img {
+             max-width: inherit !important;
+          }
 
+          .instagram {
+            max-height: inherit !important;
+          }
+
+          .container-fluid {
+            margin: 0 2.3% !important;
+          }
+
+        </style>
+  
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -71,76 +86,12 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-
-          <div class="col-sm-12 col-lg-8">
-            
-            <div id="player" class="hidden-xs hidden-sm hidden-md">
-              <div id="container"></div>
-            </div>
-
-            <div id="stream-mobile">
-              <a href="http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8" target="_blank">
-                <img src="img/1.jpg" class="img-responsive centerImg hidden-lg " alt="">
-              </a>
-            </div>
-          
-          <div class="col-sm-12 col-lg-12" id='tvframe'>
-            <b>CANAL 23</b> SEÑAL ABIERTA - <b>CLARO TV</b> / <b>CANAL 28</b> TIGO DIGITAL / <b>CANAL 25</b> ZONA ORIENTAL
-          </div>
-
-          </div>
-
-          <div class="col-sm-12 col-lg-4">
-              <div id="fb-root"></div>
-              <div id="fbContainer">
-                <div class="fb-comments" data-href="http://www.tvx.com.sv/" data-height="320" data-width="400" data-numposts="5" data-colorscheme="light"></div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="clearfix spacer"></div>
-
-    <div class="container-fluid">
-      <div class="row-fluid">
         
-        <div class="col-sm-4 col-lg-3">
-            <div id="twitter-feed"></div>
-        </div>
-        
-        <div class="col-sm-8 col-lg-7">
-            <div class="contenido">
-              <h1><img class="imgHeader" src="img/icon_tuvotasx.png" alt="">Mientras tanto</h1>
-              <div class="col-sm-12" id="">
-                <ul id="gifSlider">
-                  <li><img src="img/gif/KART2-VOTACIONES.gif" alt=""></li>
-                  <li><img src="img/gif/ROUND-2-DIPUTADOS.gif" alt=""></li>
-                  <li><img src="img/gif/STREET-VOTACIONES.gif" alt=""></li>
-                </ul>
-              </div>
-             
-            </div>
+        <div class="col-lg-12">
+            <br>
+            <div class="instagram tag"></div>
         </div>
 
-        <div class="col-lg-2 hidden-sm hidden-xs hidden-md">
-          <div class="col-sm-12">
-            <ul class="pub-tvx-programas">
-              <li><a href="http://www.tvx.com.sv/programacion/" target="_blank"><img class="img-responsive" src="img/publicidad/TWD-CONCURSO-BANNER.jpg" alt=""></a></li>
-              <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/EV.jpg" alt=""></a></li>
-              <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/EV.jpg" alt=""></a></li>
-              <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="img/publicidad/Instagram.jpg" alt=""></a></li>
-              <li><a href="https://www.facebook.com/bumbampop.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/BBP.jpg" alt=""></a></li>
-              <li><a href="https://twitter.com/canaltvx" target="_blank"><img class="img-responsive" src="img/publicidad/Twitter.jpg" alt=""></a></li>
-              <li><a href="https://www.facebook.com/zarezion.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/ZZ.jpg" alt=""></a></li>
-              <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank"><img class="img-responsive" src="img/publicidad/Youtube.jpg" alt=""></a></li>
-              <li><a href="https://www.facebook.com/ExpresaTVX?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/EXPRESA.jpg" alt=""></a></li>
-
-            </ul>
-         </div>
-
-         <div class="col-sm-12">
-              <a href="http://www.tvx.com.sv/programacion" target="_blank"><img style="margin-top: 11px;" class="img-responsive" src="img/publicidad/programacion.jpg" alt=""></a>
-         </div>
       </div> 
 
       </div>
@@ -148,30 +99,6 @@
     </div>
 
     <div class="clearfix spacer"></div>
-
-    <div class="container-fluid">
-      <div class="row-fluid">
-      
-      <div class="col-sm-6 col-lg-6">
-        <div class="contenido">
-          <h1><img class="imgHeader" src="img/icon_tuvotasx.png" alt="">ExpresaTVX</h1>
-          <div id="youtube-feed" data-plumtube data-plum-max-results=9 data-plum-show-title="link" data-plum-user="ExpresaTVX"><a href="//www.youtube.com/koryphaios">See all of Plum's videos.</a></div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-6">
-        <div class="contenido">
-          <h1><img class="imgHeader" src="img/icon_tuvotasx.png" alt="">Instagram -  TuVotasTVX</h1>
-            <div class="instagram tag"></div>
-        </div>
-      </div>
-    
-      </div>
-    </div>
-
-    <div class="clearfix spacer"></div>
-
-    <div id="social-stream"></div>
 
     <!-- Footer  -->
     <nav class="navbar navbar-default navbar-fixed-bottom hidden-xs" id="footerBg">
@@ -218,11 +145,46 @@
         <script type="text/javascript" src="js/jquery.social.stream.wall.1.3.js"></script>
         <script type="text/javascript" src="js/jquery.social.stream.1.5.4.min.js"></script>
         <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-        <script src="js/plumtube.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript" src="js/twitterfeed.js"></script>
+        <script type="text/javascript" src="js/twitterfeed_only_popular.js"></script>
+        <script type"text/javascript">
+            function createPhotoElement(photo) {
+            var innerHtml = $('<img>')
+              .addClass('instagram-image')
+              .attr('src', photo.images.thumbnail.url);
+
+            innerHtml = $('<a>')
+              .attr('target', '_blank')
+              .attr('href', photo.link)
+              .append(innerHtml);
+
+            return $('<div>')
+              .addClass('col-xs-2')
+              .attr('id', photo.id)
+              .append(innerHtml);
+          }
+
+          function didLoadInstagram(event, response) {
+            var that = this;
+
+            $.each(response.data, function(i, photo) {
+              $(that).append(createPhotoElement(photo));
+            });
+          }
+
+          $(document).ready(function() {
+            var clientId = '391f7a62e0d3453aabafe7e0414b72b5';
+            
+            $('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
+            $('.instagram.tag').instagram({
+              hash: 'elecciones2014',
+              count: 32,
+              clientId: clientId
+            });
+            
+          });
+        </script>
         
          <script>
             var _gaq=[['_setAccount','UA-45097795-4'],['_trackPageview']];

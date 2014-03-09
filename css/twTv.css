@@ -1,0 +1,53 @@
+.twitter-article, #loading-container {
+	padding: 25px 0px 25px 0px !important;
+}
+
+.tweetprofilelink {
+	font-size: 16px;
+}
+
+.twitter-text p {
+	line-height: 35px !important;
+	font-size: 30px !important;
+}
+
+.twitter-text {
+	padding-left: 85px !important;
+} 
+
+#retweet-indicator {
+	display: none !important
+}
+
+#twitter-feed {
+	min-height: inherit !important;
+	font-family: inherit !important; 
+}
+
+.container-fluid {
+	margin: 0 21% !important;
+}
+
+@media (min-width: 1400px) {
+	#twitter-feed {
+		min-height: inherit !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.scroll_content {
+		max-height: inherit !important;
+		height: auto;
+	}
+}
+
+.twitter-pic img {
+	width: 75px;
+	height: 75px;
+	margin-top: 32px;
+}
+
+.scroll_content {
+	max-height: 694px !important;
+	font-family: inherit !important;
+}

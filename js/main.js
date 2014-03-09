@@ -2,7 +2,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=815724718444105";
+  js.src = "http://connect.facebook.net/es_ES/all.js#xfbml=1&appId=815724718444105";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
