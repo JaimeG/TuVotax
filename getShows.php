@@ -166,17 +166,17 @@
 	$programa = array(
 			'nombre' => 'Entrevista | Manuel Zelaya - Patricia Rodas',
 			'inicio' => "6:00 PM",
-			'fin'=>  "6:29 PM",
-			'invitados' => ''
-		);
-
-	array_push($shows,$programa);
-	$programa = array(
-			'nombre' => 'Entrevista | Óscar Picardo (Director del centro de estudios ciudadanos de la UFG) - Elmer Crespín (Investigador de la UFG) - EN VIVO',
-			'inicio' => "6:30 PM",
 			'fin'=>  "6:59 PM",
 			'invitados' => ''
 		);
+
+	// array_push($shows,$programa);
+	// $programa = array(
+	// 		'nombre' => 'Entrevista | Óscar Picardo (Director del centro de estudios ciudadanos de la UFG) - Elmer Crespín (Investigador de la UFG) - EN VIVO',
+	// 		'inicio' => "6:30 PM",
+	// 		'fin'=>  "6:59 PM",
+	// 		'invitados' => ''
+	// 	);
 
 	array_push($shows,$programa);
 	$programa = array(
