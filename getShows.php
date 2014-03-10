@@ -164,7 +164,7 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Manuel Zelaya - Patricia Rodas - EN VIVO',
+			'nombre' => 'Entrevista | Manuel Zelaya - Patricia Rodas',
 			'inicio' => "6:00 PM",
 			'fin'=>  "6:29 PM",
 			'invitados' => ''
