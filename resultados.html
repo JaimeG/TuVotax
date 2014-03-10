@@ -79,6 +79,11 @@
             width: 42% !important;
           }
 
+          .votos {
+            font-size: 12px;
+            margin-left: 42px;
+          }
+
 
         </style>
 
@@ -131,8 +136,18 @@
             <div class="col-sm-6">
             		<h1 style="margin-top:25px;">Resultados Preliminares <br> Tribunal Supremo Electoral</h1>
 
-                <h3 style="margin-top:100px;"><div id="rojo"></div> FMLN: <span id="fmln_porcentaje"></span></h3>
-                <h3><div id="azul"></div>ARENA: <span id="arena_porcentaje"></span></h3>
+                <h3 style="margin-top:100px;">
+                  <div id="rojo"></div> 
+                  FMLN: 
+                  <span id="fmln_porcentaje"></span>
+                  <span class="votos" id="votosFMLN"></span>
+                </h3>
+                <h3>
+                  <div id="azul"></div>
+                  ARENA: 
+                  <span id="arena_porcentaje"></span>
+                  <span class="votos" id="votosARENA"></span>
+                </h3>
                 <br>
                   <p>Procesadas: <span id="porc_procesadas"></span></p>
                   <p>Pendientes: <span id="porc_pendientes"></span></p>
@@ -212,18 +227,20 @@
             $.getJSON('statistics.json?' + Math.random(), function(response){
               var new_fmln=parseFloat(response.fmln);
               var new_arena=parseFloat(response.arena);
-              noprocesables=100-arena-fmln;
 
               var cargar_chart = (arena != new_arena || fmln != new_fmln);
               arena = new_arena;
               fmln = new_fmln;
 
+              noprocesables=100-arena-fmln;
 
               $("#fmln_porcentaje").text(response.fmln + " %");
               $("#arena_porcentaje").text(response.arena + " %");
               $("#porc_procesadas").text(response.procesadas + " %");
               $("#porc_pendientes").text(response.noprocesadas + " %");
               $("#hora_actualizacion").text(response.hora);
+              $("#votosFMLN").text(response.fmln_votos);
+              $("#votosARENA").text(response.arena_votos);
               
               if(!cargar_chart)
                 return;
@@ -236,8 +253,12 @@
                   value : arena,
                   color : "#022c74"
                 },
+                {
+                  value : noprocesables,
+                  color : "#C0C0C0"
+                }
               ];
-
+              console.log(Math.abs(parseInt(response.fmln_votos.replace(',',"")) - parseInt(response.arena_votos.replace(',',''))));
               var ctx = document.getElementById("chart_resultados").getContext("2d");
               var myNewChart = new Chart(ctx).Pie(data,{});
             });
