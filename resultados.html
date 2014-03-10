@@ -258,7 +258,8 @@
                   color : "#C0C0C0"
                 }
               ];
-              console.log(Math.abs(parseInt(response.fmln_votos.replace(',',"")) - parseInt(response.arena_votos.replace(',',''))));
+              console.log(Math.abs(parseInt(response.fmln_votos.replace(',',"").replace(',',"")) + parseInt(response.arena_votos.replace(',','').replace(',',""))));
+              console.log(Math.abs(parseInt(response.fmln_votos.replace(',',"").replace(',',"")) - parseInt(response.arena_votos.replace(',','').replace(',',""))));
               var ctx = document.getElementById("chart_resultados").getContext("2d");
               var myNewChart = new Chart(ctx).Pie(data,{});
             });
