@@ -198,11 +198,12 @@
 	$programa = array(
 			'nombre' => 'Entrevista | Roberto Rugamas - Guillermo Miranda - EN VIVO',
 			'inicio' => "8:00 PM",
-			'fin'=>  "8:29 PM",
+			'fin'=>  "8:59 PM",
 			'invitados' => ''
 		);
 
 	array_push($shows,$programa);
+	
 	$programa = array(
 			'nombre' => 'Entrevista | Gerson Martínez - Alberto Arene - Juan José Martell - EN VIVO',
 			'inicio' => "9:00 PM",
