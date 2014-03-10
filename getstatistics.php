@@ -14,7 +14,7 @@
     $nodes = $finder->query("//*[contains(@class, 'votos001')]");
     
     foreach ($nodes as $node) {
-        if($node->nodeValue > 100){
+        if(str_replace(",","",$node->nodeValue) > 100){
             $fmln_votos = $node->nodeValue;
         }else{
             $fmln = $node->nodeValue;
@@ -24,7 +24,7 @@
     $nodes = $finder->query("//*[contains(@class, 'votos002')]");
     
     foreach ($nodes as $node) {
-        if($node->nodeValue > 100){
+        if(str_replace(",","",$node->nodeValue) > 100){
             $arena_votos = $node->nodeValue;
         }else{
             $arena = $node->nodeValue;
@@ -56,7 +56,6 @@
             );
 
     fclose($fh);
-
     // Defining the basic cURL function
     function curl($url) {
         $ch = curl_init();  // Initialising cURL
