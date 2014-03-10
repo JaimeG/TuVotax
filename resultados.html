@@ -198,12 +198,14 @@
         <script src="js/twitterfeed.js"></script>
         <script>
           var noprocesables = -1;
+          var arena=0;
+          var fmln=0;
           $(function(){
 
             updateShows();
             updateResultados();
             setInterval(updateShows,60000);
-            setInterval(updateResultados,60000);
+            setInterval(updateResultados,20000);
 
           });
 
@@ -224,10 +226,15 @@
 
           function updateResultados(){
             $.getJSON('statistics.json?' + Math.random(), function(response){
-              var fmln=parseFloat(response.fmln);
-              var arena=parseFloat(response.arena);
-              var cargar_chart = noprocesables != (100-arena-fmln);
+              var new_fmln=parseFloat(response.fmln);
+              var new_arena=parseFloat(response.arena);
               noprocesables=100-arena-fmln;
+
+              var cargar_chart = (arena != new_arena || fmln != new_fmln);
+              arena = new_arena;
+              fmln = new_fmln;
+
+
               $("#fmln_porcentaje").text(response.fmln + " %");
               $("#arena_porcentaje").text(response.arena + " %");
               $("#porc_procesadas").text(response.procesadas + " %");
@@ -250,7 +257,7 @@
                   color : "#C0C0C0"
                 }
               ];
-              console.log(data);
+
               var ctx = document.getElementById("chart_resultados").getContext("2d");
               var myNewChart = new Chart(ctx).Pie(data,{});
             });
