@@ -16,7 +16,9 @@
 	$counter=0;
 	do{
 		if($counter % 15 == 0){		
-			$tweets_recent = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=30&result_type=recent");
+			// $tweets_recent = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23expresatvx&count=30&result_type=recent");
+			$tweets_recent = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
+			
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.

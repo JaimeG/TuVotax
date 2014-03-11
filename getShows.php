@@ -204,11 +204,21 @@
 
 	array_push($shows,$programa);
 	$programa = array(
-			'nombre' => 'Entrevista | Gerson Martínez - Alberto Arene - Juan José Martell - EN VIVO',
-			'inicio' => "9:00 PM",
-			'fin'=>  "9:59 PM",
+			'nombre' => 'Entrevista | Roberto Rugamas - Guillermo Miranda - EN VIVO',
+			'inicio' => "8:30 PM",
+			'fin'=>  "8:59 PM",
 			'invitados' => ''
 		);
+
+	array_push($shows,$programa);
+	$programa = array(
+			'nombre' => 'Especial Segunda vuelta Elecciones presidenciales TuVotasTVX ',
+			'inicio' => "9:00 PM",
+			'fin'=>  "11:59 PM",
+			'invitados' => ''
+		);
+
+
 
 	// array_push($shows,$programa);
 	// $programa = array(
