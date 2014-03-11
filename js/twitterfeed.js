@@ -54,7 +54,7 @@ function updateFeed(){
 	 
     $.getJSON('tweets_recent.json?'+Math.random(),
         function(response) {
-        		var feeds = response.statuses;   
+        		var feeds = response;   
             var feedHTML = headerHTML + '<div class="scroll_content" style="overflow:auto; max-height:360px">';
             var displayCounter = 1;         
             for (var i=0; i<feeds.length; i++) {
